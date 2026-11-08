@@ -31,6 +31,10 @@ h2{margin:0;font-size:19px;display:flex;align-items:center;gap:8px;flex-wrap:wra
 .acts{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
 .btn{display:inline-flex;align-items:center;gap:6px;background:var(--or);color:#111;border:0;border-radius:12px;padding:10px 14px;font:inherit;font-weight:800;font-size:15px;text-decoration:none;cursor:pointer}
 .btn.alt{background:var(--btn2);color:var(--fg);border:1px solid var(--bd);font-weight:600}
+.pi{width:20px;height:20px;fill:currentColor;flex:none}
+.pis{display:inline-flex;gap:3px}
+.pi .ull{fill:var(--btn2)}
+.btn:not(.alt) .pi .ull{fill:var(--or)}
 .btn.off{background:transparent;color:var(--mut);border:1px dashed var(--bd);font-weight:600;cursor:default}
 .nota{grid-column:1/-1;font-size:13px;color:var(--mut);margin:6px 0 0}
 .nota b{color:var(--fg)}
@@ -118,6 +122,16 @@ const isMobile = isIOS || isAndroid;
 const VER = {};   // id -> {versio, url, notes} llegit del versio.json
 const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const okUrl = u => /^https:\/\//i.test(String(u || ""));
+// Icones de plataforma dels botons (agafen el color del text del botó)
+const SVG = (d, extra = "") => `<svg class="pi" viewBox="0 0 24 24" aria-hidden="true"${extra}>${d}</svg>`;
+const ICO = {
+  windows: SVG('<path d="M3 5.4 10.2 4.4v7.1H3zM11.2 4.2 21 2.8v8.7h-9.8zM3 12.5h7.2v7.1L3 18.6zM11.2 12.5H21v8.7l-9.8-1.4z"/>'),
+  apple: SVG('<path d="M16.4 12.7c0-2.4 2-3.5 2-3.6-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.2-2.8.9-3.6.9-.7 0-1.9-.8-3.1-.8-1.6 0-3.1.9-3.9 2.4-1.7 2.9-.4 7.1 1.2 9.4.8 1.1 1.7 2.4 2.9 2.4 1.2-.1 1.6-.8 3-.8s1.8.8 3.1.7c1.3 0 2.1-1.2 2.9-2.3.9-1.3 1.3-2.6 1.3-2.7-.1 0-2.4-.9-2.4-3.8zM14.1 5.6c.6-.8 1.1-1.9 1-3-1 0-2.1.6-2.8 1.4-.6.7-1.1 1.8-1 2.9 1.1.1 2.1-.5 2.8-1.3z"/>'),
+  android: SVG('<path d="M6.2 10.2a5.8 5.8 0 0 1 11.6 0z"/><path d="M8.2 5.6 6.9 3.4M15.8 5.6l1.3-2.2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" fill="none"/>' +
+    '<circle cx="9.5" cy="7.9" r=".85" class="ull"/><circle cx="14.5" cy="7.9" r=".85" class="ull"/>' +
+    '<rect x="6.2" y="11" width="11.6" height="7.6" rx="1.4"/><rect x="3.4" y="11" width="2" height="6" rx="1"/><rect x="18.6" y="11" width="2" height="6" rx="1"/>' +
+    '<rect x="8.4" y="17.8" width="2" height="3.6" rx="1"/><rect x="13.6" y="17.8" width="2" height="3.6" rx="1"/>'),
+};
 
 function card(p) {
   const T = TX[L], v = VER[p.id];
@@ -130,11 +144,11 @@ function card(p) {
                       : `<div class="ico ini">${esc(p.inicials || p.nom[0])}</div>`;
   const chips = [win || (p.versio && !senseWin) ? T.pcP : "", apk ? "Android" : "", web ? T.web + " · " + T.mob : ""].filter(Boolean)
     .map(c => `<span class="chip">${esc(c)}</span>`).join("");
-  const bWin = win ? `<a class="btn${isMobile ? " alt" : ""}" href="${esc(win)}" rel="noopener">⬇ ${T.win}</a>`
+  const bWin = win ? `<a class="btn${isMobile ? " alt" : ""}" href="${esc(win)}" rel="noopener">${ICO.windows}${T.win}</a>`
                    : (!senseWin && (p.versio || p.windows !== undefined) ? `<span class="btn off">${T.winSoon}</span>` : "");
-  const bWeb = web ? `<a class="btn${isMobile ? "" : " alt"}" href="${esc(web)}" target="_blank" rel="noopener">▶ ${T.open}</a>`
+  const bWeb = web ? `<a class="btn${isMobile ? "" : " alt"}" href="${esc(web)}" target="_blank" rel="noopener"><span class="pis">${ICO.apple}${ICO.android}</span>${T.open}</a>`
                    : (p.web !== undefined ? `<span class="btn off">${T.webSoon}</span>` : "");
-  const bApk = apk ? `<a class="btn alt" href="${esc(apk)}" rel="noopener">🤖 ${T.apk}</a>` : "";
+  const bApk = apk ? `<a class="btn alt" href="${esc(apk)}" rel="noopener">${ICO.android}${T.apk}</a>` : "";
   // a cada aparell, primer el que hi funciona
   const acts = isMobile ? [bWeb, isAndroid ? bApk : "", bWin] : [bWin, bWeb, bApk];
   const notes = [];

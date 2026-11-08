@@ -7,6 +7,7 @@
 //             els programes per actualitzar-se). La pàgina en treu la versió, l'enllaç de l'instal·lador
 //             de Windows i les notes. Si encara no existeix, el botó de Windows surt com «Aviat».
 //  - windows: enllaç fix a l'instal·lador (només si NO hi ha versio.json; el versio.json té prioritat).
+//             false = el producte no té versió de Windows (no surt el botó).
 //  - web:     adreça de l'app web (PWA). Es pot obrir al navegador i instal·lar al mòbil.
 //  - apk:     enllaç a l'APK d'Android (opcional). Si el versio.json porta "apk", té prioritat.
 //  - beta:    true = surt l'etiqueta «Beta».
@@ -73,7 +74,9 @@ window.PRODUCTES = [
   },
   {
     id: "menjarsa", nom: "Xoriguer · Menjar més sa", icona: "img/menjarsa.png", salut: true,
-    web: "",   // PENDENT: adreça de l'app web
+    versio: "menjarsa/versio.json",   // només porta l'APK (no hi ha versió de Windows)
+    windows: false,
+    web: "https://xoriguer.etrempat.workers.dev/",
     desc: {
       ca: "Escaneja un aliment i et diu si és bo per a tu, segons el teu perfil de salut.",
       es: "Escanea un alimento y te dice si es bueno para ti, según tu perfil de salud.",

@@ -121,16 +121,17 @@ const okUrl = u => /^https:\/\//i.test(String(u || ""));
 
 function card(p) {
   const T = TX[L], v = VER[p.id];
-  const win = (v && okUrl(v.url)) ? v.url : (okUrl(p.windows) ? p.windows : "");
+  const senseWin = p.windows === false;
+  const win = senseWin ? "" : (v && okUrl(v.url)) ? v.url : (okUrl(p.windows) ? p.windows : "");
   const web = okUrl(p.web) ? p.web : "";
   const apk = (v && okUrl(v.apk)) ? v.apk : (okUrl(p.apk) ? p.apk : "");
   const desktopOnly = !web && !apk;
   const ico = p.icona ? `<img class="ico" src="${esc(p.icona)}" alt="" width="64" height="64" loading="lazy">`
                       : `<div class="ico ini">${esc(p.inicials || p.nom[0])}</div>`;
-  const chips = [win || p.versio ? T.pcP : "", apk ? "Android" : "", web ? T.web + " · " + T.mob : ""].filter(Boolean)
+  const chips = [win || (p.versio && !senseWin) ? T.pcP : "", apk ? "Android" : "", web ? T.web + " · " + T.mob : ""].filter(Boolean)
     .map(c => `<span class="chip">${esc(c)}</span>`).join("");
   const bWin = win ? `<a class="btn${isMobile ? " alt" : ""}" href="${esc(win)}" rel="noopener">⬇ ${T.win}</a>`
-                   : (p.versio || p.windows !== undefined ? `<span class="btn off">${T.winSoon}</span>` : "");
+                   : (!senseWin && (p.versio || p.windows !== undefined) ? `<span class="btn off">${T.winSoon}</span>` : "");
   const bWeb = web ? `<a class="btn${isMobile ? "" : " alt"}" href="${esc(web)}" target="_blank" rel="noopener">▶ ${T.open}</a>`
                    : (p.web !== undefined ? `<span class="btn off">${T.webSoon}</span>` : "");
   const bApk = apk ? `<a class="btn alt" href="${esc(apk)}" rel="noopener">🤖 ${T.apk}</a>` : "";

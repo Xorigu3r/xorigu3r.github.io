@@ -62,7 +62,7 @@ window.PRODUCTES = [
     },
   },
   {
-    id: "placardiac", nom: "Pla Cardíac", icona: null, inicials: "PC", salut: true,
+    id: "placardiac", nom: "Pla Cardíac", icona: "img/placardiac.png", salut: true,
     versio: "placardiac/versio.json",
     desc: {
       ca: "Pla d’exercici per a la rehabilitació cardíaca, adaptat a les indicacions del cardiòleg.",

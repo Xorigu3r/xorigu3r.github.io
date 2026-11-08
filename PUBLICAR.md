@@ -21,7 +21,9 @@ Plans i Acobert ja en tenen. Per a la resta, segueix els passos de `PUBLICAR_UNA
 |-------------|---------------------|-----------------------------|
 | Pressió     | `pressio-v1.2`      | `pressio/versio.json`       |
 | Pla Cardíac | `placardiac-v1.1`   | `placardiac/versio.json`    |
-| Botifarra   | `botifarra-v1.1.0`  | `botifarra/versio.json`     |
+| Botifarra   | `botifarra-v1.4.1`  | `botifarra/versio.json`     |
+
+El `versio.json` pot portar també `"apk": "https://…/Botifarra.apk"`: la pàgina hi posarà el botó d'Android.
 
 Fins que no existeixi el `versio.json`, Pressió i Pla Cardíac surten com «Windows: aviat», i la Botifarra fa servir
 l'enllaç del Google Drive.

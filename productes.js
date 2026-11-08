@@ -8,7 +8,7 @@
 //             de Windows i les notes. Si encara no existeix, el botó de Windows surt com «Aviat».
 //  - windows: enllaç fix a l'instal·lador (només si NO hi ha versio.json; el versio.json té prioritat).
 //  - web:     adreça de l'app web (PWA). Es pot obrir al navegador i instal·lar al mòbil.
-//  - apk:     enllaç a l'APK d'Android (opcional).
+//  - apk:     enllaç a l'APK d'Android (opcional). Si el versio.json porta "apk", té prioritat.
 //  - beta:    true = surt l'etiqueta «Beta».
 //  - salut:   true = surt l'avís «No substitueix el criteri mèdic».
 // =====================================================================================

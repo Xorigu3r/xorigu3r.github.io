@@ -45,7 +45,7 @@ window.PRODUCTES = [
   {
     id: "plans", nom: "XoriguerPlans", icona: "img/plans.png", beta: true,
     versio: "Xoriguer/versio.json",
-    web: "https://xoriguerappplans.etrempat.workers.dev/",
+    web: "https://xorigu3r.github.io/plans/",
     apk: "https://github.com/Xorigu3r/xoriguer-versions/releases/download/plans-apk-v1.0.0/XoriguerAPPplans.apk",
     desc: {
       ca: "Plans d’entrenament personalitzats: sessions, rutes, estat de forma, Strava i Garmin.",
@@ -79,7 +79,7 @@ window.PRODUCTES = [
     id: "menjarsa", nom: "Xoriguer · Menjar més sa", icona: "img/menjarsa.png", salut: true,
     versio: "menjarsa/versio.json",   // només porta l'APK (no hi ha versió de Windows)
     windows: false,
-    web: "https://xoriguer.etrempat.workers.dev/",
+    web: "https://xorigu3r.github.io/menjar-sa/",
     desc: {
       ca: "Escaneja un aliment i et diu si és bo per a tu, segons el teu perfil de salut.",
       es: "Escanea un alimento y te dice si es bueno para ti, según tu perfil de salud.",

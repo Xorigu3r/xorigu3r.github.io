@@ -45,6 +45,8 @@ window.PRODUCTES = [
   {
     id: "plans", nom: "XoriguerPlans", icona: "img/plans.png", beta: true,
     versio: "Xoriguer/versio.json",
+    web: "https://xoriguerappplans.etrempat.workers.dev/",
+    apk: "https://github.com/Xorigu3r/xoriguer-versions/releases/download/plans-apk-v1.0.0/XoriguerAPPplans.apk",
     desc: {
       ca: "Plans d’entrenament personalitzats: sessions, rutes, estat de forma, Strava i Garmin.",
       es: "Planes de entrenamiento personalizados: sesiones, rutas, estado de forma, Strava y Garmin.",

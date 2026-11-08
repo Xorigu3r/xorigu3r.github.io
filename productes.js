@@ -87,4 +87,15 @@ window.PRODUCTES = [
       en: "Scan a food and find out whether it suits you, based on your health profile.",
     },
   },
+  {
+    id: "gasolina", nom: "Gasolina a prop", icona: "img/gasolina.png",
+    windows: false,                    // només app web (PWA)
+    web: "https://xorigu3r.github.io/gasolina/",
+    desc: {
+      ca: "Les gasolineres més barates del teu voltant, amb preus oficials, i si val la pena desviar-se. Sense anuncis.",
+      es: "Las gasolineras más baratas a tu alrededor, con precios oficiales, y si vale la pena desviarse. Sin anuncios.",
+      fr: "Les stations les moins chères autour de vous, aux prix officiels, et si le détour vaut le coup. Sans publicité.",
+      en: "The cheapest petrol stations around you, with official prices, and whether a detour is worth it. No ads.",
+    },
+  },
 ];

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0B0F14">
+<title>Xoriguer · Descàrregues</title>
+<meta name="description" content="Programes i apps de la família Xoriguer: Pressió, Botifarra, Plans, Acobert, Pla Cardíac i més.">
+<link rel="icon" href="img/favicon.png">
+<style>
+:root{--or:#FF8A00;--bg:#0B0F14;--card:#151b23;--fg:#F6F6F6;--mut:#a9b1bb;--bd:#2a323d;--btn2:#232b36;--ok:#3fb26b}
+@media (prefers-color-scheme: light){:root{--bg:#F6F6F6;--card:#ffffff;--fg:#0B0F14;--mut:#5b6470;--bd:#dde1e6;--btn2:#eceff2}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:"Segoe UI",system-ui,-apple-system,Roboto,sans-serif;line-height:1.45;padding:max(16px,env(safe-area-inset-top)) 16px 32px}
+main{max-width:720px;margin:0 auto}
+header{background:#0B0F14;border-radius:18px;padding:18px 16px 14px;text-align:center;border-bottom:3px solid var(--or);margin-bottom:14px}
+header img{width:min(78%,360px);height:auto;display:block;margin:0 auto}
+header p{color:#c9cfd6;margin:10px 0 0;font-size:15px}
+.lang{display:flex;justify-content:center;gap:6px;margin:0 0 16px;flex-wrap:wrap}
+.lang button{background:var(--btn2);color:var(--fg);border:1px solid var(--bd);border-radius:20px;padding:4px 12px;font:inherit;font-size:14px;cursor:pointer}
+.lang button.on{background:var(--or);color:#111;border-color:var(--or);font-weight:700}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:14px;margin:0 0 12px;display:grid;grid-template-columns:64px 1fr;gap:4px 14px}
+.ico{width:64px;height:64px;border-radius:14px;object-fit:cover;background:#0B0F14;grid-row:span 2}
+.ini{display:flex;align-items:center;justify-content:center;font-weight:900;font-size:22px;color:var(--or);border:2px solid var(--or)}
+h2{margin:0;font-size:19px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.tag{font-size:11px;font-weight:800;border-radius:10px;padding:2px 8px;background:var(--or);color:#111;text-transform:uppercase;letter-spacing:.03em}
+.ver{font-size:13px;color:var(--mut);font-weight:400}
+.desc{margin:0;color:var(--mut);font-size:15px}
+.plat{display:flex;gap:6px;flex-wrap:wrap;margin-top:4px}
+.chip{font-size:12px;border:1px solid var(--bd);border-radius:10px;padding:1px 8px;color:var(--mut)}
+.acts{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.btn{display:inline-flex;align-items:center;gap:6px;background:var(--or);color:#111;border:0;border-radius:12px;padding:10px 14px;font:inherit;font-weight:800;font-size:15px;text-decoration:none;cursor:pointer}
+.btn.alt{background:var(--btn2);color:var(--fg);border:1px solid var(--bd);font-weight:600}
+.btn.off{background:transparent;color:var(--mut);border:1px dashed var(--bd);font-weight:600;cursor:default}
+.nota{grid-column:1/-1;font-size:13px;color:var(--mut);margin:6px 0 0}
+.nota b{color:var(--fg)}
+.salut{grid-column:1/-1;font-size:13px;margin:6px 0 0;padding:6px 10px;border-radius:10px;background:rgba(255,138,0,.12);border:1px solid rgba(255,138,0,.45)}
+details{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:12px 14px;margin:0 0 12px}
+summary{cursor:pointer;font-weight:700}
+details h3{font-size:16px;margin:12px 0 2px}
+ol{margin:4px 0;padding-left:22px}
+li{margin:4px 0}
+footer{text-align:center;color:var(--mut);font-size:13px;margin-top:18px}
+#toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--or);color:#111;font-weight:800;padding:8px 16px;border-radius:12px;display:none}
+@media (max-width:420px){.card{grid-template-columns:52px 1fr}.ico{width:52px;height:52px}.btn{flex:1 1 100%;justify-content:center}}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="img/xoriguer-logo.png" alt="Xoriguer" width="720" height="161">
+    <p data-t="sub"></p>
+  </header>
+  <div class="lang" id="lang"></div>
+  <div id="llista"></div>
+
+  <details id="ajuda">
+    <summary data-t="howTitle"></summary>
+    <h3>🍏 <span data-t="ios"></span></h3>
+    <ol><li data-t="ios1"></li><li data-t="ios2"></li><li data-t="ios3"></li></ol>
+    <h3>🤖 Android</h3>
+    <ol><li data-t="and1"></li><li data-t="and2"></li></ol>
+    <h3>💻 <span data-t="pc"></span></h3>
+    <ol><li data-t="pc1"></li><li data-t="pc2"></li></ol>
+  </details>
+
+  <div style="text-align:center"><button class="btn alt" id="share">📤 <span data-t="share"></span></button></div>
+  <footer data-t="made"></footer>
+</main>
+<div id="toast"></div>
+<script src="productes.js"></script>
+<script>
+"use strict";
+const VERSIONS = "https://raw.githubusercontent.com/Xorigu3r/xoriguer-versions/main/";
+const PAGE = location.origin + location.pathname;
+const TX = {
+ca:{sub:"Programes i apps de la família Xoriguer. Gratis.",beta:"Beta",win:"Baixa per a Windows",winSoon:"Windows: aviat",apk:"Baixa l’APK (Android)",
+ open:"Obre l’app web",install:"Com s’instal·la?",webSoon:"App web: aviat",onlyPc:"Programa per a ordinador amb <b>Windows</b>: obre aquesta pàgina des de l’ordinador per baixar-lo.",
+ smart:"Si Windows diu que «ha protegit l’equip»: <b>Més informació → Executa igualment</b>. Les dades es guarden al teu ordinador i no s’esborren en actualitzar.",
+ health:"⚕️ No substitueix el criteri mèdic.",web:"Web",pcP:"Windows",mob:"Mòbil",news:"Novetats",
+ howTitle:"Com s’instal·la una app web al mòbil o a l’ordinador",ios:"iPhone i iPad",ios1:"Obre l’app amb el <b>Safari</b>.",ios2:"Toca <b>Compartir</b> ⬆️ (el quadrat amb la fletxa).",ios3:"Tria <b>Afegeix a la pantalla d’inici</b> i després <b>Afegeix</b>.",
+ and1:"Obre l’app amb el <b>Chrome</b>.",and2:"Toca el menú <b>⋮</b> i tria <b>Instal·la l’aplicació</b> (o <b>Afegeix a la pantalla d’inici</b>).",
+ pc:"Ordinador",pc1:"Obre l’app amb el <b>Chrome</b> o l’<b>Edge</b>.",pc2:"Toca la icona d’instal·lar <b>⊕</b> de la barra d’adreces.",
+ share:"Comparteix aquesta pàgina",shareText:"Programes i apps Xoriguer:",copied:"Enllaç copiat!",made:"Creat amb IA per Xavier Musté"},
+es:{sub:"Programas y apps de la familia Xoriguer. Gratis.",beta:"Beta",win:"Descargar para Windows",winSoon:"Windows: pronto",apk:"Descargar el APK (Android)",
+ open:"Abrir la app web",install:"¿Cómo se instala?",webSoon:"App web: pronto",onlyPc:"Programa para ordenador con <b>Windows</b>: abre esta página desde el ordenador para descargarlo.",
+ smart:"Si Windows dice que «ha protegido el equipo»: <b>Más información → Ejecutar de todas formas</b>. Los datos se guardan en tu ordenador y no se borran al actualizar.",
+ health:"⚕️ No sustituye el criterio médico.",web:"Web",pcP:"Windows",mob:"Móvil",news:"Novedades",
+ howTitle:"Cómo se instala una app web en el móvil o en el ordenador",ios:"iPhone y iPad",ios1:"Abre la app con <b>Safari</b>.",ios2:"Toca <b>Compartir</b> ⬆️ (el cuadrado con la flecha).",ios3:"Elige <b>Añadir a pantalla de inicio</b> y luego <b>Añadir</b>.",
+ and1:"Abre la app con <b>Chrome</b>.",and2:"Toca el menú <b>⋮</b> y elige <b>Instalar aplicación</b> (o <b>Añadir a pantalla de inicio</b>).",
+ pc:"Ordenador",pc1:"Abre la app con <b>Chrome</b> o <b>Edge</b>.",pc2:"Toca el icono de instalar <b>⊕</b> de la barra de direcciones.",
+ share:"Compartir esta página",shareText:"Programas y apps Xoriguer:",copied:"¡Enlace copiado!",made:"Creado con IA por Xavier Musté"},
+fr:{sub:"Logiciels et applis de la famille Xoriguer. Gratuits.",beta:"Bêta",win:"Télécharger pour Windows",winSoon:"Windows : bientôt",apk:"Télécharger l’APK (Android)",
+ open:"Ouvrir l’appli web",install:"Comment l’installer ?",webSoon:"Appli web : bientôt",onlyPc:"Logiciel pour ordinateur <b>Windows</b> : ouvrez cette page depuis l’ordinateur pour le télécharger.",
+ smart:"Si Windows affiche « Windows a protégé votre ordinateur » : <b>Informations complémentaires → Exécuter quand même</b>. Vos données restent sur votre ordinateur et ne sont pas effacées lors des mises à jour.",
+ health:"⚕️ Ne remplace pas l’avis médical.",web:"Web",pcP:"Windows",mob:"Mobile",news:"Nouveautés",
+ howTitle:"Installer une appli web sur mobile ou ordinateur",ios:"iPhone et iPad",ios1:"Ouvrez l’appli avec <b>Safari</b>.",ios2:"Touchez <b>Partager</b> ⬆️ (le carré avec la flèche).",ios3:"Choisissez <b>Sur l’écran d’accueil</b> puis <b>Ajouter</b>.",
+ and1:"Ouvrez l’appli avec <b>Chrome</b>.",and2:"Touchez le menu <b>⋮</b> et choisissez <b>Installer l’application</b>.",
+ pc:"Ordinateur",pc1:"Ouvrez l’appli avec <b>Chrome</b> ou <b>Edge</b>.",pc2:"Cliquez sur l’icône d’installation <b>⊕</b> dans la barre d’adresse.",
+ share:"Partager cette page",shareText:"Logiciels et applis Xoriguer :",copied:"Lien copié !",made:"Créé avec l’IA par Xavier Musté"},
+en:{sub:"Programs and apps from the Xoriguer family. Free.",beta:"Beta",win:"Download for Windows",winSoon:"Windows: coming soon",apk:"Download the APK (Android)",
+ open:"Open the web app",install:"How do I install it?",webSoon:"Web app: coming soon",onlyPc:"Desktop program for <b>Windows</b>: open this page on your computer to download it.",
+ smart:"If Windows says it “protected your PC”: <b>More info → Run anyway</b>. Your data stays on your computer and is kept when you update.",
+ health:"⚕️ Not a substitute for medical advice.",web:"Web",pcP:"Windows",mob:"Mobile",news:"What’s new",
+ howTitle:"How to install a web app on your phone or computer",ios:"iPhone and iPad",ios1:"Open the app in <b>Safari</b>.",ios2:"Tap <b>Share</b> ⬆️ (the square with the arrow).",ios3:"Choose <b>Add to Home Screen</b>, then <b>Add</b>.",
+ and1:"Open the app in <b>Chrome</b>.",and2:"Tap the <b>⋮</b> menu and choose <b>Install app</b> (or <b>Add to Home screen</b>).",
+ pc:"Computer",pc1:"Open the app in <b>Chrome</b> or <b>Edge</b>.",pc2:"Click the install icon <b>⊕</b> in the address bar.",
+ share:"Share this page",shareText:"Xoriguer programs and apps:",copied:"Link copied!",made:"Made with AI by Xavier Musté"}};
+
+let L = (() => { let o = ""; try { o = localStorage.getItem("xoriguer_idioma") || "" } catch (e) {}
+  if (TX[o]) return o;
+  for (const l of (navigator.languages || [navigator.language])) { const c = String(l || "").slice(0, 2); if (TX[c]) return c }
+  return "en" })();
+const ua = navigator.userAgent;
+const isIOS = /iPhone|iPad|iPod/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+const isAndroid = /Android/i.test(ua);
+const isMobile = isIOS || isAndroid;
+const VER = {};   // id -> {versio, url, notes} llegit del versio.json
+const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const okUrl = u => /^https:\/\//i.test(String(u || ""));
+
+function card(p) {
+  const T = TX[L], v = VER[p.id];
+  const win = (v && okUrl(v.url)) ? v.url : (okUrl(p.windows) ? p.windows : "");
+  const web = okUrl(p.web) ? p.web : "", apk = okUrl(p.apk) ? p.apk : "";
+  const desktopOnly = !web && !apk;
+  const ico = p.icona ? `<img class="ico" src="${esc(p.icona)}" alt="" width="64" height="64" loading="lazy">`
+                      : `<div class="ico ini">${esc(p.inicials || p.nom[0])}</div>`;
+  const chips = [win || p.versio ? T.pcP : "", apk ? "Android" : "", web ? T.web + " · " + T.mob : ""].filter(Boolean)
+    .map(c => `<span class="chip">${esc(c)}</span>`).join("");
+  const bWin = win ? `<a class="btn${isMobile ? " alt" : ""}" href="${esc(win)}" rel="noopener">⬇ ${T.win}</a>`
+                   : (p.versio || p.windows !== undefined ? `<span class="btn off">${T.winSoon}</span>` : "");
+  const bWeb = web ? `<a class="btn${isMobile ? "" : " alt"}" href="${esc(web)}" target="_blank" rel="noopener">▶ ${T.open}</a>`
+                   : (p.web !== undefined ? `<span class="btn off">${T.webSoon}</span>` : "");
+  const bApk = apk ? `<a class="btn alt" href="${esc(apk)}" rel="noopener">🤖 ${T.apk}</a>` : "";
+  // a cada aparell, primer el que hi funciona
+  const acts = isMobile ? [bWeb, isAndroid ? bApk : "", bWin] : [bWin, bWeb, bApk];
+  const notes = [];
+  if (isMobile && desktopOnly) notes.push(`<p class="nota">💻 ${T.onlyPc}</p>`);
+  if (!isMobile && win) notes.push(`<p class="nota">${T.smart}</p>`);
+  if (v && v.notes) notes.push(`<p class="nota"><b>${T.news}:</b> ${esc(v.notes)}</p>`);
+  if (web) notes.push(`<p class="nota"><a href="#ajuda" data-ajuda style="color:var(--or)">${T.install}</a></p>`);
+  return `<section class="card" id="p-${esc(p.id)}">${ico}
+    <h2>${esc(p.nom)}${p.beta ? ` <span class="tag">${T.beta}</span>` : ""}${v && v.versio ? ` <span class="ver">v${esc(v.versio)}</span>` : ""}</h2>
+    <div><p class="desc">${esc((p.desc || {})[L] || (p.desc || {}).ca || "")}</p><div class="plat">${chips}</div></div>
+    <div class="acts">${acts.filter(Boolean).join("")}</div>
+    ${notes.join("")}${p.salut ? `<p class="salut">${T.health}</p>` : ""}</section>`;
+}
+
+function render() {
+  const T = TX[L];
+  document.documentElement.lang = L;
+  document.querySelectorAll("[data-t]").forEach(e => { e.innerHTML = T[e.dataset.t] || "" });
+  document.getElementById("lang").innerHTML = Object.entries({ca:"Català",es:"Español",fr:"Français",en:"English"})
+    .map(([k, n]) => `<button data-l="${k}" class="${k === L ? "on" : ""}">${n}</button>`).join("");
+  document.querySelectorAll("#lang button").forEach(b => b.onclick = () => {
+    L = b.dataset.l; try { localStorage.setItem("xoriguer_idioma", L) } catch (e) {} render() });
+  document.getElementById("llista").innerHTML = (window.PRODUCTES || []).map(card).join("");
+  document.querySelectorAll("[data-ajuda]").forEach(a => a.onclick = () => { document.getElementById("ajuda").open = true });
+}
+
+// versions reals des del repo xoriguer-versions (si un no existeix encara, el producte surt igualment)
+async function carregarVersions() {
+  await Promise.all((window.PRODUCTES || []).filter(p => p.versio).map(async p => {
+    try {
+      const r = await fetch(VERSIONS + p.versio, { cache: "no-store" });
+      if (r.ok) { const d = await r.json(); if (d && typeof d === "object") VER[p.id] = d }
+    } catch (e) {}
+  }));
+  render();
+}
+
+document.getElementById("share").onclick = async () => {
+  const T = TX[L];
+  if (navigator.share) { try { await navigator.share({ title: "Xoriguer", text: T.shareText, url: PAGE }); return } catch (e) { if (e && e.name === "AbortError") return } }
+  try { await navigator.clipboard.writeText(T.shareText + " " + PAGE); const t = document.getElementById("toast"); t.textContent = T.copied; t.style.display = "block"; setTimeout(() => t.style.display = "none", 2000) }
+  catch (e) { location.href = "https://wa.me/?text=" + encodeURIComponent(T.shareText + " " + PAGE) }
+};
+render();
+carregarVersions();
+</script>
+</body>
+</html>

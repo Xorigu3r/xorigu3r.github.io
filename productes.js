@@ -67,6 +67,7 @@ window.PRODUCTES = [
   {
     id: "placardiac", nom: "Pla Cardíac", icona: "img/placardiac.png", salut: true,
     versio: "placardiac/versio.json",
+    web: "https://xorigu3r.github.io/pla-cardiac/",
     desc: {
       ca: "Pla d’exercici per a la rehabilitació cardíaca, adaptat a les indicacions del cardiòleg.",
       es: "Plan de ejercicio para la rehabilitación cardíaca, adaptado a las indicaciones del cardiólogo.",

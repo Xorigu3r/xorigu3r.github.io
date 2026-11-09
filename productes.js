@@ -43,6 +43,17 @@ window.PRODUCTES = [
     },
   },
   {
+    id: "domino", nom: "Dòmino", icona: "img/domino.png",
+    windows: false,                    // de moment només app web (PWA)
+    web: "https://xorigu3r.github.io/domino/",
+    desc: {
+      ca: "Dòmino per parelles: en solitari contra la IA o online amb amics.",
+      es: "Dominó por parejas: en solitario contra la IA u online con amigos.",
+      fr: "Dominos par équipes : en solo contre l’IA ou en ligne avec des amis.",
+      en: "Partnership dominoes: solo against the AI or online with friends.",
+    },
+  },
+  {
     id: "plans", nom: "XoriguerPlans", icona: "img/plans.png", beta: true,
     versio: "Xoriguer/versio.json",
     web: "https://xorigu3r.github.io/plans/",

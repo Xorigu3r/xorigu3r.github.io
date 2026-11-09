@@ -44,7 +44,7 @@ window.PRODUCTES = [
   },
   {
     id: "domino", nom: "Dòmino", icona: "img/domino.png",
-    windows: false,                    // de moment només app web (PWA)
+    versio: "domino/versio.json",      // instal·lador de Windows + APK (Release domino-v…)
     web: "https://xorigu3r.github.io/domino/",
     desc: {
       ca: "Dòmino per parelles: en solitari contra la IA o online amb amics.",

@@ -109,4 +109,15 @@ window.PRODUCTES = [
       en: "The cheapest petrol stations around you, with official prices, and whether a detour is worth it. No ads.",
     },
   },
+  {
+    id: "aparcament", nom: "Xoriguer Aparcament", icona: "img/aparcament.png",
+    windows: false,                    // només app web (PWA)
+    web: "https://xorigu3r.github.io/xoriguer-aparcament/",
+    desc: {
+      ca: "On has aparcat el cotxe? Guarda la posició, torna-hi a peu i controla el temps del parquímetre.",
+      es: "¿Dónde has aparcado el coche? Guarda la posición, vuelve a pie y controla el tiempo del parquímetro.",
+      fr: "Où est garée ta voiture ? Enregistre la position, retrouve-la à pied et surveille le temps du parcmètre.",
+      en: "Where did you park? Save the spot, walk back to it and keep track of the parking meter.",
+    },
+  },
 ];

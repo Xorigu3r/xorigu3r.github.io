@@ -120,4 +120,15 @@ window.PRODUCTES = [
       en: "Where did you park? Save the spot, walk back to it and keep track of the parking meter.",
     },
   },
+  {
+    id: "papers", nom: "Xoriguer Papers", icona: "img/papers.png", beta: true,
+    windows: false,                    // només app web (PWA)
+    web: "https://xorigu3r.github.io/xoriguer-papers/",
+    desc: {
+      ca: "Entén la teva nòmina línia a línia: comprova els càlculs, l’IRPF segons el model 145 i simula canvis. Tot al teu dispositiu.",
+      es: "Entiende tu nómina línea a línea: comprueba los cálculos, el IRPF según el modelo 145 y simula cambios. Todo en tu dispositivo.",
+      fr: "Comprenez votre fiche de paie ligne par ligne : vérifiez les calculs et l’impôt retenu, et simulez des changements. Tout reste sur votre appareil.",
+      en: "Understand your Spanish payslip line by line: check the maths, the income-tax withholding and simulate changes. Everything stays on your device.",
+    },
+  },
 ];

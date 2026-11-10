@@ -54,6 +54,17 @@ window.PRODUCTES = [
     },
   },
   {
+    id: "paraules", nom: "Paraules", icona: "img/paraules.png",
+    versio: "paraules/versio.json",    // instal·lador de Windows + APK (Release paraules-v…)
+    web: "https://xorigu3r.github.io/paraules/",
+    desc: {
+      ca: "Joc de paraules creuades en català i castellà: contra la IA o online amb amics, per torns.",
+      es: "Juego de palabras cruzadas en catalán y castellano: contra la IA u online con amigos, por turnos.",
+      fr: "Jeu de mots croisés en catalan et en espagnol : contre l’IA ou en ligne avec des amis, au tour par tour.",
+      en: "Crossword tile game in Catalan and Spanish: against the AI or online with friends, turn by turn.",
+    },
+  },
+  {
     id: "plans", nom: "XoriguerPlans", icona: "img/plans.png", beta: true,
     versio: "Xoriguer/versio.json",
     web: "https://xorigu3r.github.io/plans/",
@@ -118,6 +129,18 @@ window.PRODUCTES = [
       es: "¿Dónde has aparcado el coche? Guarda la posición, vuelve a pie y controla el tiempo del parquímetro.",
       fr: "Où est garée ta voiture ? Enregistre la position, retrouve-la à pied et surveille le temps du parcmètre.",
       en: "Where did you park? Save the spot, walk back to it and keep track of the parking meter.",
+    },
+  },
+  {
+    id: "radars", nom: "Xoriguer Radars", icona: "img/radars.png", beta: true,
+    windows: false,                    // app web (PWA) + APK d'Android
+    web: "https://xorigu3r.github.io/xoriguer-radars/",
+    apk: "https://github.com/Xorigu3r/xoriguer-radars/releases/download/v1.0/XoriguerRadars.apk",
+    desc: {
+      ca: "T’avisa per veu dels radars fixos i trams que tens al davant, amb dades oficials de la DGT. L’app d’Android avisa fins i tot amb la pantalla apagada.",
+      es: "Te avisa por voz de los radares fijos y de tramo que tienes delante, con datos oficiales de la DGT. La app de Android avisa incluso con la pantalla apagada.",
+      fr: "Vous prévient à voix haute des radars fixes et des radars tronçons devant vous, avec les données officielles de la DGT. L’appli Android prévient même écran éteint.",
+      en: "Spoken alerts for the fixed and average-speed cameras ahead of you, using official DGT data. The Android app warns you even with the screen off.",
     },
   },
   {

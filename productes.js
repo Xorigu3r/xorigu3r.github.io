@@ -135,12 +135,12 @@ window.PRODUCTES = [
     id: "radars", nom: "Xoriguer Radars", icona: "img/radars.png", beta: true,
     windows: false,                    // app web (PWA) + APK d'Android
     web: "https://xorigu3r.github.io/xoriguer-radars/",
-    apk: "https://github.com/Xorigu3r/xoriguer-radars/releases/download/v1.0/XoriguerRadars.apk",
+    apk: "https://github.com/Xorigu3r/xoriguer-radars/releases/download/v1.1/XoriguerRadars.apk",
     desc: {
-      ca: "T’avisa per veu dels radars fixos i trams que tens al davant, amb dades oficials de la DGT. L’app d’Android avisa fins i tot amb la pantalla apagada.",
-      es: "Te avisa por voz de los radares fijos y de tramo que tienes delante, con datos oficiales de la DGT. La app de Android avisa incluso con la pantalla apagada.",
-      fr: "Vous prévient à voix haute des radars fixes et des radars tronçons devant vous, avec les données officielles de la DGT. L’appli Android prévient même écran éteint.",
-      en: "Spoken alerts for the fixed and average-speed cameras ahead of you, using official DGT data. The Android app warns you even with the screen off.",
+      ca: "T’avisa per veu dels radars fixos i trams que tens al davant (DGT, Trànsit i França), també pel Bluetooth del cotxe i amb la pantalla apagada. Velocitat mitjana als trams, incidències de trànsit i mapa sense connexió.",
+      es: "Te avisa por voz de los radares fijos y de tramo que tienes delante (DGT, Tráfico de Cataluña y Francia), también por el Bluetooth del coche y con la pantalla apagada. Velocidad media en tramos, incidencias de tráfico y mapa sin conexión.",
+      fr: "Vous prévient à voix haute des radars fixes et tronçons devant vous (Espagne, Catalogne ; en France, zones de danger uniquement), aussi par le Bluetooth de la voiture et écran éteint. Vitesse moyenne, trafic et carte hors ligne.",
+      en: "Spoken alerts for the fixed and average-speed cameras ahead of you (Spain, Catalonia, and danger zones in France), also over the car’s Bluetooth and with the screen off. Average-speed tracking, traffic incidents and offline maps.",
     },
   },
   {

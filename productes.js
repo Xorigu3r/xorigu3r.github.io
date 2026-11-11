@@ -65,6 +65,18 @@ window.PRODUCTES = [
     },
   },
   {
+    id: "lectura", nom: "Lectura · Xoriguer", icona: "img/lectura.png", beta: true,
+    // Windows: ZIP portable (descomprimir i obrir l'exe). Codi: https://github.com/Xorigu3r/xoriguer-lectura
+    windows: "https://github.com/Xorigu3r/xoriguer-lectura/releases/download/v0.1.0/LecturaXoriguer-Windows.zip",
+    apk: "https://github.com/Xorigu3r/xoriguer-lectura/releases/download/v0.1.0/LecturaXoriguer.apk",
+    desc: {
+      ca: "Lector de llibres electrònics gratuït i de codi obert: EPUB, FB2, TXT i PDF, amb cites de colors, notes i marcadors.",
+      es: "Lector de libros electrónicos gratuito y de código abierto: EPUB, FB2, TXT y PDF, con citas de colores, notas y marcadores.",
+      fr: "Liseuse de livres numériques gratuite et open source : EPUB, FB2, TXT et PDF, avec citations en couleur, notes et signets.",
+      en: "Free, open-source ebook reader: EPUB, FB2, TXT and PDF, with colour highlights, notes and bookmarks.",
+    },
+  },
+  {
     id: "plans", nom: "XoriguerPlans", icona: "img/plans.png", beta: true,
     versio: "Xoriguer/versio.json",
     web: "https://xorigu3r.github.io/plans/",

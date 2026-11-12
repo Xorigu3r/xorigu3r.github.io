@@ -23,6 +23,7 @@ window.PRODUCTES = [
     id: "pressio", cat: "salut", nom: "XoriguerPressió", icona: "img/pressio.png", salut: true,
     versio: "pressio/versio.json",
     web: "https://xorigu3r.github.io/xoriguer-pressio/",
+    apk: "https://github.com/Xorigu3r/xoriguer-versions/releases/download/pressio-apk-v1.0.0/XoriguerPressio.apk",
     desc: {
       ca: "Registre de la pressió arterial: classificació, mitjana de 7 dies, gràfics i informe PDF per al metge.",
       es: "Registro de la presión arterial: clasificación, media de 7 días, gráficos e informe PDF para el médico.",
@@ -103,6 +104,7 @@ window.PRODUCTES = [
     id: "placardiac", cat: "salut", nom: "Pla Cardíac", icona: "img/placardiac.png", salut: true,
     versio: "placardiac/versio.json",
     web: "https://xorigu3r.github.io/pla-cardiac/",
+    apk: "https://github.com/Xorigu3r/xoriguer-versions/releases/download/placardiac-apk-v1.0.0/XoriguerPlaCardiac.apk",
     desc: {
       ca: "Pla d’exercici per a la rehabilitació cardíaca, adaptat a les indicacions del cardiòleg.",
       es: "Plan de ejercicio para la rehabilitación cardíaca, adaptado a las indicaciones del cardiólogo.",
@@ -124,8 +126,9 @@ window.PRODUCTES = [
   },
   {
     id: "gasolina", cat: "cotxe", nom: "Gasolina a prop", icona: "img/gasolina.png",
-    windows: false,                    // només app web (PWA)
+    windows: false,                    // app web (PWA) + APK d'Android
     web: "https://xorigu3r.github.io/gasolina/",
+    apk: "https://github.com/Xorigu3r/xoriguer-versions/releases/download/gasolina-apk-v1.0.0/XoriguerGasolina.apk",
     desc: {
       ca: "Les gasolineres més barates del teu voltant, amb preus oficials, i si val la pena desviar-se. Sense anuncis.",
       es: "Las gasolineras más baratas a tu alrededor, con precios oficiales, y si vale la pena desviarse. Sin anuncios.",
@@ -135,8 +138,9 @@ window.PRODUCTES = [
   },
   {
     id: "aparcament", cat: "cotxe", nom: "Xoriguer Aparcament", icona: "img/aparcament.png",
-    windows: false,                    // només app web (PWA)
+    windows: false,                    // app web (PWA) + APK d'Android
     web: "https://xorigu3r.github.io/xoriguer-aparcament/",
+    apk: "https://github.com/Xorigu3r/xoriguer-versions/releases/download/aparcament-apk-v1.0.0/XoriguerAparcament.apk",
     desc: {
       ca: "On has aparcat el cotxe? Guarda la posició, torna-hi a peu i controla el temps del parquímetre.",
       es: "¿Dónde has aparcado el coche? Guarda la posición, vuelve a pie y controla el tiempo del parquímetro.",
@@ -170,8 +174,9 @@ window.PRODUCTES = [
   },
   {
     id: "papers", cat: "utils", nom: "Xoriguer Papers", icona: "img/papers.png", beta: true,
-    windows: false,                    // només app web (PWA)
+    windows: false,                    // app web (PWA) + APK d'Android
     web: "https://xorigu3r.github.io/xoriguer-papers/",
+    apk: "https://github.com/Xorigu3r/xoriguer-versions/releases/download/papers-apk-v1.0.0/XoriguerPapers.apk",
     desc: {
       ca: "Entén la teva nòmina línia a línia: comprova els càlculs, l’IRPF segons el model 145 i simula canvis. Tot al teu dispositiu.",
       es: "Entiende tu nómina línea a línea: comprueba los cálculos, el IRPF según el modelo 145 y simula cambios. Todo en tu dispositivo.",

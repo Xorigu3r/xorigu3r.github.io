@@ -160,7 +160,7 @@ window.PRODUCTES = [
     id: "notificacions", cat: "utils", nom: "Xoriguer Notificacions", icona: "img/notificacions.png", beta: true,
     windows: false,                    // APK d'Android (la web només ensenya l'app: no pot llegir notificacions)
     web: "https://xorigu3r.github.io/xoriguer-notificacions/",
-    apk: "https://github.com/Xorigu3r/xoriguer-notificacions/releases/download/v1.0/XoriguerNotificacions.apk",
+    apk: "https://github.com/Xorigu3r/xoriguer-notificacions/releases/download/v1.1/XoriguerNotificacions.apk",
     desc: {
       ca: "Gestiona les notificacions del mòbil amb regles: ignora les que no vols, silencia les ràfegues de missatges, posposa-les en lots, alerta pròpia per a una persona, resposta automàtica, recordatori, alarma i mode secret. Desfer i historial. Sense Internet: res surt del mòbil.",
       es: "Gestiona las notificaciones del móvil con reglas: ignora las que no quieres, silencia las ráfagas de mensajes, posponlas en lotes, alerta propia para una persona, respuesta automática, recordatorio, alarma y modo secreto. Deshacer e historial. Sin Internet: nada sale del móvil.",

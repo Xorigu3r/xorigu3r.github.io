@@ -68,8 +68,8 @@ window.PRODUCTES = [
   {
     id: "lectura", cat: "utils", nom: "Lectura · Xoriguer", icona: "img/lectura.png", beta: true,
     // Windows: instal·lador MSI (a la Release també hi ha el ZIP portable). Codi: https://github.com/Xorigu3r/xoriguer-lectura
-    windows: "https://github.com/Xorigu3r/xoriguer-lectura/releases/download/v0.5.0/LecturaXoriguer-Instalador.msi",
-    apk: "https://github.com/Xorigu3r/xoriguer-lectura/releases/download/v0.5.0/LecturaXoriguer.apk",
+    windows: "https://github.com/Xorigu3r/xoriguer-lectura/releases/download/v0.5.1/LecturaXoriguer-Instalador.msi",
+    apk: "https://github.com/Xorigu3r/xoriguer-lectura/releases/download/v0.5.1/LecturaXoriguer.apk",
     desc: {
       ca: "Lector de llibres gratuït i de codi obert: EPUB, PDF, Kindle, Word, còmics… Llibres de domini públic per baixar, lectura en veu alta, diccionari, cites i notes.",
       es: "Lector de libros gratuito y de código abierto: EPUB, PDF, Kindle, Word, cómics… Libros de dominio público para descargar, lectura en voz alta, diccionario, citas y notas.",
@@ -148,7 +148,7 @@ window.PRODUCTES = [
     id: "radars", cat: "cotxe", nom: "Xoriguer Radars", icona: "img/radars.png", beta: true,
     windows: false,                    // app web (PWA) + APK d'Android
     web: "https://xorigu3r.github.io/xoriguer-radars/",
-    apk: "https://github.com/Xorigu3r/xoriguer-radars/releases/download/v1.3/XoriguerRadars.apk",
+    apk: "https://github.com/Xorigu3r/xoriguer-radars/releases/download/v1.4/XoriguerRadars.apk",
     desc: {
       ca: "T’avisa per veu dels radars fixos i trams que tens al davant (DGT, Trànsit i França), també pel Bluetooth del cotxe i amb la pantalla apagada. Velocitat mitjana als trams, incidències de trànsit i mapa sense connexió.",
       es: "Te avisa por voz de los radares fijos y de tramo que tienes delante (DGT, Tráfico de Cataluña y Francia), también por el Bluetooth del coche y con la pantalla apagada. Velocidad media en tramos, incidencias de tráfico y mapa sin conexión.",

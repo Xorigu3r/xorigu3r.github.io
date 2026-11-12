@@ -102,6 +102,14 @@ footer{text-align:center;color:var(--mut);font-size:13px;margin-top:18px}
     <ol><li data-t="pc1"></li><li data-t="pc2"></li></ol>
   </details>
 
+  <details id="ajuda-apk">
+    <summary data-t="apkTitle"></summary>
+    <ol><li data-t="apk1"></li><li data-t="apk2"></li><li data-t="apk3"></li></ol>
+    <p data-t="apkOff"></p>
+    <ol><li data-t="apk4"></li><li data-t="apk5"></li><li data-t="apk6"></li></ol>
+    <p class="nota" data-t="apkWhy"></p>
+  </details>
+
   <div style="text-align:center"><button class="btn alt" id="share">📤 <span data-t="share"></span></button></div>
   <footer data-t="made"></footer>
 </main>
@@ -112,7 +120,8 @@ footer{text-align:center;color:var(--mut);font-size:13px;margin-top:18px}
 const VERSIONS = "https://raw.githubusercontent.com/Xorigu3r/xoriguer-versions/main/";
 const PAGE = location.origin + location.pathname;
 const TX = {
-ca:{sub:"Programes i apps de la família Xoriguer. Gratis.",beta:"Beta",win:"Baixa per a Windows",winSoon:"Windows: aviat",apk:"Baixa l’APK (Android)",
+ca:{apkHelp:"Play Protect no et deixa instal·lar l’APK?",apkTitle:"Com s’instal·la una APK d’Android (i Play Protect)",apk1:"Baixa l’APK i obre el fitxer (Baixades o la notificació del navegador).",apk2:"Si diu que no es poden instal·lar apps d’aquest origen: <b>Configuració</b> → activa <b>Permet d’aquesta font</b>.",apk3:"Si surt <b>«Bloquejada per Play Protect»</b>: <b>Més detalls → Instal·la igualment</b>.",apkOff:"Si no hi ha «Instal·la igualment», desactiva Play Protect una estona:",apk4:"<b>Play Store</b> → la teva <b>foto</b> (a dalt a la dreta) → <b>Play Protect</b> → roda dentada <b>⚙</b> → desactiva <b>Analitza les aplicacions amb Play Protect</b>.",apk5:"Instal·la l’APK i obre-la un cop.",apk6:"Torna a Play Protect i <b>torna’l a activar</b>. Si avisa d’aquesta app, tria <b>Ignora</b>, no «Desinstal·la».",apkWhy:"Google avisa de totes les apps que no venen de Play Store. Les apps Xoriguer no porten anuncis ni rastrejadors.",
+ sub:"Programes i apps de la família Xoriguer. Gratis.",beta:"Beta",win:"Baixa per a Windows",winSoon:"Windows: aviat",apk:"Baixa l’APK (Android)",
  open:"Obre l’app web",install:"Com s’instal·la?",webSoon:"App web: aviat",onlyPc:"Programa per a ordinador amb <b>Windows</b>: obre aquesta pàgina des de l’ordinador per baixar-lo.",
  smart:"Si Windows diu que «ha protegit l’equip»: <b>Més informació → Executa igualment</b>. Les dades es guarden al teu ordinador i no s’esborren en actualitzar.",
  health:"⚕️ No substitueix el criteri mèdic.",web:"Web",pcP:"Windows",mob:"Mòbil",news:"Novetats",
@@ -122,7 +131,8 @@ ca:{sub:"Programes i apps de la família Xoriguer. Gratis.",beta:"Beta",win:"Bai
  share:"Comparteix aquesta pàgina",shareText:"Programes i apps Xoriguer:",copied:"Enllaç copiat!",made:"Creat per Xavier Musté",
  donate:"Fes un donatiu",contact:"Contacte",write:"Escriu-me",donaT:"Dona suport a Xoriguer",donaD:"Totes les apps són gratis. Si et són útils i vols ajudar a fer-ne de noves, pots fer un donatiu voluntari, de l’import que vulguis.",donaB:"Fes un donatiu amb <b>PayPal</b>",contactD:"Idees, errors o dubtes:",all:"Totes",
  c_jocs:"Jocs",c_utils:"Productivitat",c_esport:"Esport",c_salut:"Salut",c_cotxe:"Cotxe"},
-es:{sub:"Programas y apps de la familia Xoriguer. Gratis.",beta:"Beta",win:"Descargar para Windows",winSoon:"Windows: pronto",apk:"Descargar el APK (Android)",
+es:{apkHelp:"¿Play Protect no te deja instalar el APK?",apkTitle:"Cómo se instala un APK de Android (y Play Protect)",apk1:"Descarga el APK y abre el archivo (Descargas o la notificación del navegador).",apk2:"Si dice que no se pueden instalar apps de este origen: <b>Ajustes</b> → activa <b>Permitir de esta fuente</b>.",apk3:"Si sale <b>«Bloqueada por Play Protect»</b>: <b>Más detalles → Instalar de todas formas</b>.",apkOff:"Si no aparece «Instalar de todas formas», desactiva Play Protect un momento:",apk4:"<b>Play Store</b> → tu <b>foto</b> (arriba a la derecha) → <b>Play Protect</b> → rueda dentada <b>⚙</b> → desactiva <b>Analizar aplicaciones con Play Protect</b>.",apk5:"Instala el APK y ábrelo una vez.",apk6:"Vuelve a Play Protect y <b>actívalo otra vez</b>. Si avisa de esta app, elige <b>Ignorar</b>, no «Desinstalar».",apkWhy:"Google avisa de todas las apps que no vienen de Play Store. Las apps Xoriguer no llevan anuncios ni rastreadores.",
+ sub:"Programas y apps de la familia Xoriguer. Gratis.",beta:"Beta",win:"Descargar para Windows",winSoon:"Windows: pronto",apk:"Descargar el APK (Android)",
  open:"Abrir la app web",install:"¿Cómo se instala?",webSoon:"App web: pronto",onlyPc:"Programa para ordenador con <b>Windows</b>: abre esta página desde el ordenador para descargarlo.",
  smart:"Si Windows dice que «ha protegido el equipo»: <b>Más información → Ejecutar de todas formas</b>. Los datos se guardan en tu ordenador y no se borran al actualizar.",
  health:"⚕️ No sustituye el criterio médico.",web:"Web",pcP:"Windows",mob:"Móvil",news:"Novedades",
@@ -132,7 +142,8 @@ es:{sub:"Programas y apps de la familia Xoriguer. Gratis.",beta:"Beta",win:"Desc
  share:"Compartir esta página",shareText:"Programas y apps Xoriguer:",copied:"¡Enlace copiado!",made:"Creado por Xavier Musté",
  donate:"Haz un donativo",contact:"Contacto",write:"Escríbeme",donaT:"Apoya a Xoriguer",donaD:"Todas las apps son gratis. Si te son útiles y quieres ayudar a crear otras nuevas, puedes hacer un donativo voluntario, del importe que quieras.",donaB:"Haz un donativo con <b>PayPal</b>",contactD:"Ideas, errores o dudas:",all:"Todas",
  c_jocs:"Juegos",c_utils:"Productividad",c_esport:"Deporte",c_salut:"Salud",c_cotxe:"Coche"},
-fr:{sub:"Logiciels et applis de la famille Xoriguer. Gratuits.",beta:"Bêta",win:"Télécharger pour Windows",winSoon:"Windows : bientôt",apk:"Télécharger l’APK (Android)",
+fr:{apkHelp:"Play Protect bloque l’installation de l’APK ?",apkTitle:"Installer un APK Android (et Play Protect)",apk1:"Téléchargez l’APK et ouvrez le fichier (Téléchargements ou la notification du navigateur).",apk2:"S’il refuse les applis de cette source : <b>Paramètres</b> → activez <b>Autoriser cette source</b>.",apk3:"Si « <b>Bloquée par Play Protect</b> » s’affiche : <b>Plus de détails → Installer quand même</b>.",apkOff:"Sans « Installer quand même », désactivez Play Protect un moment :",apk4:"<b>Play Store</b> → votre <b>photo</b> (en haut à droite) → <b>Play Protect</b> → roue dentée <b>⚙</b> → désactivez <b>Analyser les applications avec Play Protect</b>.",apk5:"Installez l’APK et ouvrez-le une fois.",apk6:"Revenez à Play Protect et <b>réactivez-le</b>. S’il signale cette appli, choisissez <b>Ignorer</b>, pas « Désinstaller ».",apkWhy:"Google signale toutes les applis qui ne viennent pas du Play Store. Les applis Xoriguer n’ont ni publicité ni traceurs.",
+ sub:"Logiciels et applis de la famille Xoriguer. Gratuits.",beta:"Bêta",win:"Télécharger pour Windows",winSoon:"Windows : bientôt",apk:"Télécharger l’APK (Android)",
  open:"Ouvrir l’appli web",install:"Comment l’installer ?",webSoon:"Appli web : bientôt",onlyPc:"Logiciel pour ordinateur <b>Windows</b> : ouvrez cette page depuis l’ordinateur pour le télécharger.",
  smart:"Si Windows affiche « Windows a protégé votre ordinateur » : <b>Informations complémentaires → Exécuter quand même</b>. Vos données restent sur votre ordinateur et ne sont pas effacées lors des mises à jour.",
  health:"⚕️ Ne remplace pas l’avis médical.",web:"Web",pcP:"Windows",mob:"Mobile",news:"Nouveautés",
@@ -142,7 +153,8 @@ fr:{sub:"Logiciels et applis de la famille Xoriguer. Gratuits.",beta:"Bêta",win
  share:"Partager cette page",shareText:"Logiciels et applis Xoriguer :",copied:"Lien copié !",made:"Créé par Xavier Musté",
  donate:"Faire un don",contact:"Contact",write:"Écrivez-moi",donaT:"Soutenir Xoriguer",donaD:"Toutes les applis sont gratuites. Si elles vous sont utiles et que vous voulez aider à en créer d’autres, vous pouvez faire un don libre, du montant de votre choix.",donaB:"Faire un don avec <b>PayPal</b>",contactD:"Idées, bugs ou questions :",all:"Toutes",
  c_jocs:"Jeux",c_utils:"Productivité",c_esport:"Sport",c_salut:"Santé",c_cotxe:"Voiture"},
-en:{sub:"Programs and apps from the Xoriguer family. Free.",beta:"Beta",win:"Download for Windows",winSoon:"Windows: coming soon",apk:"Download the APK (Android)",
+en:{apkHelp:"Play Protect won’t let you install the APK?",apkTitle:"How to install an Android APK (and Play Protect)",apk1:"Download the APK and open the file (Downloads or the browser notification).",apk2:"If it says apps from this source can’t be installed: <b>Settings</b> → turn on <b>Allow from this source</b>.",apk3:"If you see <b>“Blocked by Play Protect”</b>: <b>More details → Install anyway</b>.",apkOff:"If there’s no “Install anyway”, turn Play Protect off for a moment:",apk4:"<b>Play Store</b> → your <b>profile picture</b> (top right) → <b>Play Protect</b> → gear <b>⚙</b> → turn off <b>Scan apps with Play Protect</b>.",apk5:"Install the APK and open it once.",apk6:"Go back to Play Protect and <b>turn it on again</b>. If it warns about this app, choose <b>Ignore</b>, not “Uninstall”.",apkWhy:"Google warns about every app that doesn’t come from the Play Store. Xoriguer apps have no ads or trackers.",
+ sub:"Programs and apps from the Xoriguer family. Free.",beta:"Beta",win:"Download for Windows",winSoon:"Windows: coming soon",apk:"Download the APK (Android)",
  open:"Open the web app",install:"How do I install it?",webSoon:"Web app: coming soon",onlyPc:"Desktop program for <b>Windows</b>: open this page on your computer to download it.",
  smart:"If Windows says it “protected your PC”: <b>More info → Run anyway</b>. Your data stays on your computer and is kept when you update.",
  health:"⚕️ Not a substitute for medical advice.",web:"Web",pcP:"Windows",mob:"Mobile",news:"What’s new",
@@ -198,6 +210,7 @@ function card(p) {
   if (!isMobile && win) notes.push(`<p class="nota">${T.smart}</p>`);
   if (v && v.notes) notes.push(`<p class="nota"><b>${T.news}:</b> ${esc(v.notes)}</p>`);
   if (web) notes.push(`<p class="nota"><a href="#ajuda" data-ajuda style="color:var(--or)">${T.install}</a></p>`);
+  if (apk && (!isMobile || isAndroid)) notes.push(`<p class="nota"><a href="#ajuda-apk" data-ajuda="ajuda-apk" style="color:var(--or)">${T.apkHelp}</a></p>`);
   return `<section class="card" id="p-${esc(p.id)}">${ico}
     <h2>${esc(p.nom)}${p.beta ? ` <span class="tag">${T.beta}</span>` : ""}${v && v.versio ? ` <span class="ver">v${esc(v.versio)}</span>` : ""}</h2>
     <div><p class="desc">${esc((p.desc || {})[L] || (p.desc || {}).ca || "")}</p><div class="plat">${chips}</div></div>
@@ -231,7 +244,7 @@ function llista() {
     .map(([k, e]) => `<h3 class="cath">${e} ${T["c_" + k]}</h3>` + P.filter(p => p.cat === k).map(card).join(""));
   if (!CAT && altres.length) grups.push(altres.map(card).join(""));
   document.getElementById("llista").innerHTML = grups.join("");
-  document.querySelectorAll("[data-ajuda]").forEach(a => a.onclick = () => { document.getElementById("ajuda").open = true });
+  document.querySelectorAll("[data-ajuda]").forEach(a => a.onclick = () => { document.getElementById(a.dataset.ajuda || "ajuda").open = true });
 }
 
 function render() {

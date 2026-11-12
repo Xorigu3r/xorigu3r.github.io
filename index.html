@@ -24,7 +24,11 @@ header p{color:#c9cfd6;margin:10px 0 0;font-size:15px}
 .top{display:flex;justify-content:flex-end;flex-wrap:wrap;gap:6px;margin:-6px -4px 10px}
 .topl{display:inline-flex;align-items:center;gap:5px;font-size:13px;color:#e6e9ed;text-decoration:none;border:1px solid #2a323d;border-radius:20px;padding:4px 10px;background:#151b23}
 .topl:hover{border-color:var(--or)}
-.topl.dn{background:var(--or);border-color:var(--or);color:#111;font-weight:700}
+.topl.dn{background:#FFC439;border-color:#FFC439;color:#003087;font-weight:700}
+.ppl{width:18px;height:18px;flex:none}
+.btn.pp{background:#FFC439;color:#003087;font-size:16px;padding:11px 18px}
+.btn.pp .ppl{width:22px;height:22px}
+.btn.pp b{font-style:italic;font-weight:900}
 .cats{display:flex;gap:6px;overflow-x:auto;margin:0 -16px 14px;padding:6px 16px;scrollbar-width:none;position:sticky;top:0;z-index:2;background:var(--bg)}
 .cats::-webkit-scrollbar{display:none}
 .cats button{flex:none;background:var(--card);color:var(--fg);border:1px solid var(--bd);border-radius:20px;padding:7px 14px;font:inherit;font-size:14px;font-weight:600;cursor:pointer;white-space:nowrap}
@@ -73,7 +77,7 @@ footer{text-align:center;color:var(--mut);font-size:13px;margin-top:18px}
 <body>
 <main>
   <header>
-    <nav class="top"><a class="topl" id="mail" href="#"><span aria-hidden="true">✉</span> <span id="mailt"></span></a><a class="topl dn" href="#dona"><span aria-hidden="true">♥</span> <span data-t="donate"></span></a></nav>
+    <nav class="top"><a class="topl" id="mail" href="#"><span aria-hidden="true">✉</span> <span id="mailt"></span></a><a class="topl dn" href="#dona"><svg class="ppl" viewBox="0 0 24 24" aria-hidden="true"><path fill="#003087" d="M7.016 19.198h-4.2a.562.562 0 0 1-.555-.65L5.093.584A.692.692 0 0 1 5.776 0h7.222c3.417 0 5.904 2.488 5.846 5.5-.006.25-.027.5-.066.747A6.794 6.794 0 0 1 12.071 12H8.743a.69.69 0 0 0-.682.583l-.325 2.056-.013.083-.692 4.39-.015.087z"/><path fill="#009CDE" d="M19.79 6.142c-.01.087-.01.175-.023.261a7.76 7.76 0 0 1-7.695 6.598H9.007l-.283 1.795-.013.083-.692 4.39-.134.843-.014.088H6.86l-.497 3.15a.562.562 0 0 0 .555.65h3.94a.69.69 0 0 0 .683-.582l.639-4.051a.69.69 0 0 1 .682-.583h2.234a5.938 5.938 0 0 0 5.887-5.03 4.558 4.558 0 0 0-1.193-3.612z"/></svg> <span data-t="donate"></span></a></nav>
     <img src="img/xoriguer-logo.png" alt="Xoriguer" width="720" height="161">
     <p data-t="sub"></p>
   </header>
@@ -84,7 +88,7 @@ footer{text-align:center;color:var(--mut);font-size:13px;margin-top:18px}
   <section class="dona" id="dona">
     <h2>☕ <span data-t="donaT"></span></h2>
     <p data-t="donaD"></p>
-    <a class="btn" id="paypal" href="#" target="_blank" rel="noopener"><span data-t="donaB"></span></a>
+    <a class="btn pp" id="paypal" href="#" target="_blank" rel="noopener"><svg class="ppl" viewBox="0 0 24 24" aria-hidden="true"><path fill="#003087" d="M7.016 19.198h-4.2a.562.562 0 0 1-.555-.65L5.093.584A.692.692 0 0 1 5.776 0h7.222c3.417 0 5.904 2.488 5.846 5.5-.006.25-.027.5-.066.747A6.794 6.794 0 0 1 12.071 12H8.743a.69.69 0 0 0-.682.583l-.325 2.056-.013.083-.692 4.39-.015.087z"/><path fill="#009CDE" d="M19.79 6.142c-.01.087-.01.175-.023.261a7.76 7.76 0 0 1-7.695 6.598H9.007l-.283 1.795-.013.083-.692 4.39-.134.843-.014.088H6.86l-.497 3.15a.562.562 0 0 0 .555.65h3.94a.69.69 0 0 0 .683-.582l.639-4.051a.69.69 0 0 1 .682-.583h2.234a5.938 5.938 0 0 0 5.887-5.03 4.558 4.558 0 0 0-1.193-3.612z"/></svg><span data-t="donaB"></span></a>
     <p style="margin:12px 0 0;font-size:13px"><span data-t="contactD"></span> <a id="mail2" href="#" style="color:var(--or)"></a></p>
   </section>
 
@@ -115,8 +119,8 @@ ca:{sub:"Programes i apps de la família Xoriguer. Gratis.",beta:"Beta",win:"Bai
  howTitle:"Com s’instal·la una app web al mòbil o a l’ordinador",ios:"iPhone i iPad",ios1:"Obre l’app amb el <b>Safari</b>.",ios2:"Toca <b>Compartir</b> ⬆️ (el quadrat amb la fletxa).",ios3:"Tria <b>Afegeix a la pantalla d’inici</b> i després <b>Afegeix</b>.",
  and1:"Obre l’app amb el <b>Chrome</b>.",and2:"Toca el menú <b>⋮</b> i tria <b>Instal·la l’aplicació</b> (o <b>Afegeix a la pantalla d’inici</b>).",
  pc:"Ordinador",pc1:"Obre l’app amb el <b>Chrome</b> o l’<b>Edge</b>.",pc2:"Toca la icona d’instal·lar <b>⊕</b> de la barra d’adreces.",
- share:"Comparteix aquesta pàgina",shareText:"Programes i apps Xoriguer:",copied:"Enllaç copiat!",made:"Creat amb IA per Xavier Musté",
- donate:"Fes un donatiu",donaT:"Dona suport a Xoriguer",donaD:"Totes les apps són gratis. Si et són útils i vols ajudar a fer-ne de noves, pots fer un donatiu voluntari, de l’import que vulguis.",donaB:"Fes un donatiu amb PayPal",contactD:"Idees, errors o dubtes:",all:"Totes",
+ share:"Comparteix aquesta pàgina",shareText:"Programes i apps Xoriguer:",copied:"Enllaç copiat!",made:"Creat per Xavier Musté",
+ donate:"Fes un donatiu",donaT:"Dona suport a Xoriguer",donaD:"Totes les apps són gratis. Si et són útils i vols ajudar a fer-ne de noves, pots fer un donatiu voluntari, de l’import que vulguis.",donaB:"Fes un donatiu amb <b>PayPal</b>",contactD:"Idees, errors o dubtes:",all:"Totes",
  c_jocs:"Jocs",c_utils:"Productivitat",c_esport:"Esport",c_salut:"Salut",c_cotxe:"Cotxe"},
 es:{sub:"Programas y apps de la familia Xoriguer. Gratis.",beta:"Beta",win:"Descargar para Windows",winSoon:"Windows: pronto",apk:"Descargar el APK (Android)",
  open:"Abrir la app web",install:"¿Cómo se instala?",webSoon:"App web: pronto",onlyPc:"Programa para ordenador con <b>Windows</b>: abre esta página desde el ordenador para descargarlo.",
@@ -125,8 +129,8 @@ es:{sub:"Programas y apps de la familia Xoriguer. Gratis.",beta:"Beta",win:"Desc
  howTitle:"Cómo se instala una app web en el móvil o en el ordenador",ios:"iPhone y iPad",ios1:"Abre la app con <b>Safari</b>.",ios2:"Toca <b>Compartir</b> ⬆️ (el cuadrado con la flecha).",ios3:"Elige <b>Añadir a pantalla de inicio</b> y luego <b>Añadir</b>.",
  and1:"Abre la app con <b>Chrome</b>.",and2:"Toca el menú <b>⋮</b> y elige <b>Instalar aplicación</b> (o <b>Añadir a pantalla de inicio</b>).",
  pc:"Ordenador",pc1:"Abre la app con <b>Chrome</b> o <b>Edge</b>.",pc2:"Toca el icono de instalar <b>⊕</b> de la barra de direcciones.",
- share:"Compartir esta página",shareText:"Programas y apps Xoriguer:",copied:"¡Enlace copiado!",made:"Creado con IA por Xavier Musté",
- donate:"Haz un donativo",donaT:"Apoya a Xoriguer",donaD:"Todas las apps son gratis. Si te son útiles y quieres ayudar a crear otras nuevas, puedes hacer un donativo voluntario, del importe que quieras.",donaB:"Haz un donativo con PayPal",contactD:"Ideas, errores o dudas:",all:"Todas",
+ share:"Compartir esta página",shareText:"Programas y apps Xoriguer:",copied:"¡Enlace copiado!",made:"Creado por Xavier Musté",
+ donate:"Haz un donativo",donaT:"Apoya a Xoriguer",donaD:"Todas las apps son gratis. Si te son útiles y quieres ayudar a crear otras nuevas, puedes hacer un donativo voluntario, del importe que quieras.",donaB:"Haz un donativo con <b>PayPal</b>",contactD:"Ideas, errores o dudas:",all:"Todas",
  c_jocs:"Juegos",c_utils:"Productividad",c_esport:"Deporte",c_salut:"Salud",c_cotxe:"Coche"},
 fr:{sub:"Logiciels et applis de la famille Xoriguer. Gratuits.",beta:"Bêta",win:"Télécharger pour Windows",winSoon:"Windows : bientôt",apk:"Télécharger l’APK (Android)",
  open:"Ouvrir l’appli web",install:"Comment l’installer ?",webSoon:"Appli web : bientôt",onlyPc:"Logiciel pour ordinateur <b>Windows</b> : ouvrez cette page depuis l’ordinateur pour le télécharger.",
@@ -135,8 +139,8 @@ fr:{sub:"Logiciels et applis de la famille Xoriguer. Gratuits.",beta:"Bêta",win
  howTitle:"Installer une appli web sur mobile ou ordinateur",ios:"iPhone et iPad",ios1:"Ouvrez l’appli avec <b>Safari</b>.",ios2:"Touchez <b>Partager</b> ⬆️ (le carré avec la flèche).",ios3:"Choisissez <b>Sur l’écran d’accueil</b> puis <b>Ajouter</b>.",
  and1:"Ouvrez l’appli avec <b>Chrome</b>.",and2:"Touchez le menu <b>⋮</b> et choisissez <b>Installer l’application</b>.",
  pc:"Ordinateur",pc1:"Ouvrez l’appli avec <b>Chrome</b> ou <b>Edge</b>.",pc2:"Cliquez sur l’icône d’installation <b>⊕</b> dans la barre d’adresse.",
- share:"Partager cette page",shareText:"Logiciels et applis Xoriguer :",copied:"Lien copié !",made:"Créé avec l’IA par Xavier Musté",
- donate:"Faire un don",donaT:"Soutenir Xoriguer",donaD:"Toutes les applis sont gratuites. Si elles vous sont utiles et que vous voulez aider à en créer d’autres, vous pouvez faire un don libre, du montant de votre choix.",donaB:"Faire un don avec PayPal",contactD:"Idées, bugs ou questions :",all:"Toutes",
+ share:"Partager cette page",shareText:"Logiciels et applis Xoriguer :",copied:"Lien copié !",made:"Créé par Xavier Musté",
+ donate:"Faire un don",donaT:"Soutenir Xoriguer",donaD:"Toutes les applis sont gratuites. Si elles vous sont utiles et que vous voulez aider à en créer d’autres, vous pouvez faire un don libre, du montant de votre choix.",donaB:"Faire un don avec <b>PayPal</b>",contactD:"Idées, bugs ou questions :",all:"Toutes",
  c_jocs:"Jeux",c_utils:"Productivité",c_esport:"Sport",c_salut:"Santé",c_cotxe:"Voiture"},
 en:{sub:"Programs and apps from the Xoriguer family. Free.",beta:"Beta",win:"Download for Windows",winSoon:"Windows: coming soon",apk:"Download the APK (Android)",
  open:"Open the web app",install:"How do I install it?",webSoon:"Web app: coming soon",onlyPc:"Desktop program for <b>Windows</b>: open this page on your computer to download it.",
@@ -145,8 +149,8 @@ en:{sub:"Programs and apps from the Xoriguer family. Free.",beta:"Beta",win:"Dow
  howTitle:"How to install a web app on your phone or computer",ios:"iPhone and iPad",ios1:"Open the app in <b>Safari</b>.",ios2:"Tap <b>Share</b> ⬆️ (the square with the arrow).",ios3:"Choose <b>Add to Home Screen</b>, then <b>Add</b>.",
  and1:"Open the app in <b>Chrome</b>.",and2:"Tap the <b>⋮</b> menu and choose <b>Install app</b> (or <b>Add to Home screen</b>).",
  pc:"Computer",pc1:"Open the app in <b>Chrome</b> or <b>Edge</b>.",pc2:"Click the install icon <b>⊕</b> in the address bar.",
- share:"Share this page",shareText:"Xoriguer programs and apps:",copied:"Link copied!",made:"Made with AI by Xavier Musté",
- donate:"Donate",donaT:"Support Xoriguer",donaD:"All the apps are free. If you find them useful and want to help make new ones, you can make a voluntary donation of any amount.",donaB:"Donate with PayPal",contactD:"Ideas, bugs or questions:",all:"All",
+ share:"Share this page",shareText:"Xoriguer programs and apps:",copied:"Link copied!",made:"Made by Xavier Musté",
+ donate:"Donate",donaT:"Support Xoriguer",donaD:"All the apps are free. If you find them useful and want to help make new ones, you can make a voluntary donation of any amount.",donaB:"Donate with <b>PayPal</b>",contactD:"Ideas, bugs or questions:",all:"All",
  c_jocs:"Games",c_utils:"Productivity",c_esport:"Sport",c_salut:"Health",c_cotxe:"Car"}};
 
 let L = (() => { let o = ""; try { o = localStorage.getItem("xoriguer_idioma") || "" } catch (e) {}
@@ -205,7 +209,11 @@ function card(p) {
 const CATEGORIES = [["jocs","🎲"],["utils","🧰"],["esport","🚴"],["salut","❤️"],["cotxe","🚗"]];
 // Correu i PayPal es munten aquí (sencers no surten a l'HTML: menys correu brossa dels robots)
 const MAIL = ["etrempat", "gmail.com"].join("@");
-const PAYPAL = "https://www.paypal.com/donate/?business=" + encodeURIComponent(MAIL) + "&currency_code=EUR";
+// PayPal: amb un compte personal, el botó «donate» de PayPal no funciona («no puede aceptar donativos»).
+// Si hi ha PAYPAL_ME (el nom de paypal.me/NOM), s'usa aquest; si no, un pagament normal a l'adreça.
+const PAYPAL_ME = "";
+const PAYPAL = PAYPAL_ME ? "https://www.paypal.me/" + PAYPAL_ME
+  : "https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=" + encodeURIComponent(MAIL) + "&item_name=" + encodeURIComponent("Donatiu Xoriguer") + "&currency_code=EUR";
 const hashCat = () => { const h = location.hash.slice(1); return CATEGORIES.some(c => c[0] === h) ? h : "" };
 let CAT = hashCat();
 

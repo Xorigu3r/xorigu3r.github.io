@@ -156,6 +156,18 @@ window.PRODUCTES = [
     },
   },
   {
+    id: "notificacions", nom: "Xoriguer Notificacions", icona: "img/notificacions.png", beta: true,
+    windows: false,                    // APK d'Android (la web només ensenya l'app: no pot llegir notificacions)
+    web: "https://xorigu3r.github.io/xoriguer-notificacions/",
+    apk: "https://github.com/Xorigu3r/xoriguer-notificacions/releases/download/v1.0/XoriguerNotificacions.apk",
+    desc: {
+      ca: "Gestiona les notificacions del mòbil amb regles: ignora les que no vols, silencia les ràfegues de missatges, posposa-les en lots, alerta pròpia per a una persona, resposta automàtica, recordatori, alarma i mode secret. Desfer i historial. Sense Internet: res surt del mòbil.",
+      es: "Gestiona las notificaciones del móvil con reglas: ignora las que no quieres, silencia las ráfagas de mensajes, posponlas en lotes, alerta propia para una persona, respuesta automática, recordatorio, alarma y modo secreto. Deshacer e historial. Sin Internet: nada sale del móvil.",
+      fr: "Gérez les notifications du téléphone avec des règles : ignorez celles que vous ne voulez pas, calmez les rafales de messages, recevez-les par lots, alerte propre pour une personne, réponse automatique, rappel, alarme et mode secret. Annuler et historique. Sans Internet : rien ne quitte le téléphone.",
+      en: "Manage your phone’s notifications with rules: ignore the ones you don’t want, quiet message bursts, batch them, custom alerts for a person, auto-reply, reminders, alarms and secret mode. Undo and history. No Internet access: nothing leaves your phone.",
+    },
+  },
+  {
     id: "papers", nom: "Xoriguer Papers", icona: "img/papers.png", beta: true,
     windows: false,                    // només app web (PWA)
     web: "https://xorigu3r.github.io/xoriguer-papers/",

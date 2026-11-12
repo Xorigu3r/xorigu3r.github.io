@@ -12,6 +12,7 @@
 //  - apk:     enllaç a l'APK d'Android (opcional). Si el versio.json porta "apk", té prioritat.
 //  - beta:    true = surt l'etiqueta «Beta».
 //  - salut:   true = surt l'avís «No substitueix el criteri mèdic».
+//  - cat:     categoria (jocs, esport, salut, cotxe, utils). Els noms i l'ordre són a CATEGORIES (index.html).
 // =====================================================================================
 
 // Enllaç de baixada directa del Google Drive (salta la pàgina de "no es pot analitzar")
@@ -19,7 +20,7 @@ const DRIVE = id => `https://drive.usercontent.google.com/download?id=${id}&expo
 
 window.PRODUCTES = [
   {
-    id: "pressio", nom: "XoriguerPressió", icona: "img/pressio.png", salut: true,
+    id: "pressio", cat: "salut", nom: "XoriguerPressió", icona: "img/pressio.png", salut: true,
     versio: "pressio/versio.json",
     web: "https://xorigu3r.github.io/xoriguer-pressio/",
     desc: {
@@ -30,7 +31,7 @@ window.PRODUCTES = [
     },
   },
   {
-    id: "botifarra", nom: "Botifarra", icona: "img/botifarra.png",
+    id: "botifarra", cat: "jocs", nom: "Botifarra", icona: "img/botifarra.png",
     versio: "botifarra/versio.json",
     web: "https://botifarra-d71cc.web.app/",
     windows: DRIVE("1dMCEtug-hVK0r7WnJFVdVk4IV46t7bUI"),
@@ -43,7 +44,7 @@ window.PRODUCTES = [
     },
   },
   {
-    id: "domino", nom: "Dòmino", icona: "img/domino.png",
+    id: "domino", cat: "jocs", nom: "Dòmino", icona: "img/domino.png",
     versio: "domino/versio.json",      // instal·lador de Windows + APK (Release domino-v…)
     web: "https://xorigu3r.github.io/domino/",
     desc: {
@@ -54,7 +55,7 @@ window.PRODUCTES = [
     },
   },
   {
-    id: "paraules", nom: "Paraules", icona: "img/paraules.png",
+    id: "paraules", cat: "jocs", nom: "Paraules", icona: "img/paraules.png",
     versio: "paraules/versio.json",    // instal·lador de Windows + APK (Release paraules-v…)
     web: "https://xorigu3r.github.io/paraules/",
     desc: {
@@ -65,7 +66,7 @@ window.PRODUCTES = [
     },
   },
   {
-    id: "lectura", nom: "Lectura · Xoriguer", icona: "img/lectura.png", beta: true,
+    id: "lectura", cat: "utils", nom: "Lectura · Xoriguer", icona: "img/lectura.png", beta: true,
     // Windows: instal·lador MSI (a la Release també hi ha el ZIP portable). Codi: https://github.com/Xorigu3r/xoriguer-lectura
     windows: "https://github.com/Xorigu3r/xoriguer-lectura/releases/download/v0.5.0/LecturaXoriguer-Instalador.msi",
     apk: "https://github.com/Xorigu3r/xoriguer-lectura/releases/download/v0.5.0/LecturaXoriguer.apk",
@@ -77,7 +78,7 @@ window.PRODUCTES = [
     },
   },
   {
-    id: "plans", nom: "XoriguerPlans", icona: "img/plans.png", beta: true,
+    id: "plans", cat: "esport", nom: "XoriguerPlans", icona: "img/plans.png", beta: true,
     versio: "Xoriguer/versio.json",
     web: "https://xorigu3r.github.io/plans/",
     apk: "https://github.com/Xorigu3r/xoriguer-versions/releases/download/plans-apk-v1.0.0/XoriguerAPPplans.apk",
@@ -89,7 +90,7 @@ window.PRODUCTES = [
     },
   },
   {
-    id: "acobert", nom: "Xoriguer Acobert", icona: "img/acobert.png", beta: true,
+    id: "acobert", cat: "esport", nom: "Xoriguer Acobert", icona: "img/acobert.png", beta: true,
     versio: "acobert/versio.json",
     desc: {
       ca: "Entrenament a casa amb rodet intel·ligent: sessions guiades, rutes virtuals i potència.",
@@ -99,7 +100,7 @@ window.PRODUCTES = [
     },
   },
   {
-    id: "placardiac", nom: "Pla Cardíac", icona: "img/placardiac.png", salut: true,
+    id: "placardiac", cat: "salut", nom: "Pla Cardíac", icona: "img/placardiac.png", salut: true,
     versio: "placardiac/versio.json",
     web: "https://xorigu3r.github.io/pla-cardiac/",
     desc: {
@@ -110,7 +111,7 @@ window.PRODUCTES = [
     },
   },
   {
-    id: "menjarsa", nom: "Xoriguer · Menjar més sa", icona: "img/menjarsa.png", salut: true,
+    id: "menjarsa", cat: "salut", nom: "Xoriguer · Menjar més sa", icona: "img/menjarsa.png", salut: true,
     versio: "menjarsa/versio.json",   // només porta l'APK (no hi ha versió de Windows)
     windows: false,
     web: "https://xorigu3r.github.io/menjar-sa/",
@@ -122,7 +123,7 @@ window.PRODUCTES = [
     },
   },
   {
-    id: "gasolina", nom: "Gasolina a prop", icona: "img/gasolina.png",
+    id: "gasolina", cat: "cotxe", nom: "Gasolina a prop", icona: "img/gasolina.png",
     windows: false,                    // només app web (PWA)
     web: "https://xorigu3r.github.io/gasolina/",
     desc: {
@@ -133,7 +134,7 @@ window.PRODUCTES = [
     },
   },
   {
-    id: "aparcament", nom: "Xoriguer Aparcament", icona: "img/aparcament.png",
+    id: "aparcament", cat: "cotxe", nom: "Xoriguer Aparcament", icona: "img/aparcament.png",
     windows: false,                    // només app web (PWA)
     web: "https://xorigu3r.github.io/xoriguer-aparcament/",
     desc: {
@@ -144,7 +145,7 @@ window.PRODUCTES = [
     },
   },
   {
-    id: "radars", nom: "Xoriguer Radars", icona: "img/radars.png", beta: true,
+    id: "radars", cat: "cotxe", nom: "Xoriguer Radars", icona: "img/radars.png", beta: true,
     windows: false,                    // app web (PWA) + APK d'Android
     web: "https://xorigu3r.github.io/xoriguer-radars/",
     apk: "https://github.com/Xorigu3r/xoriguer-radars/releases/download/v1.2/XoriguerRadars.apk",
@@ -156,7 +157,7 @@ window.PRODUCTES = [
     },
   },
   {
-    id: "notificacions", nom: "Xoriguer Notificacions", icona: "img/notificacions.png", beta: true,
+    id: "notificacions", cat: "utils", nom: "Xoriguer Notificacions", icona: "img/notificacions.png", beta: true,
     windows: false,                    // APK d'Android (la web només ensenya l'app: no pot llegir notificacions)
     web: "https://xorigu3r.github.io/xoriguer-notificacions/",
     apk: "https://github.com/Xorigu3r/xoriguer-notificacions/releases/download/v1.0/XoriguerNotificacions.apk",
@@ -168,7 +169,7 @@ window.PRODUCTES = [
     },
   },
   {
-    id: "papers", nom: "Xoriguer Papers", icona: "img/papers.png", beta: true,
+    id: "papers", cat: "utils", nom: "Xoriguer Papers", icona: "img/papers.png", beta: true,
     windows: false,                    // només app web (PWA)
     web: "https://xorigu3r.github.io/xoriguer-papers/",
     desc: {

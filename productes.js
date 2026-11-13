@@ -184,4 +184,15 @@ window.PRODUCTES = [
       en: "Understand your Spanish payslip line by line: check the maths, the income-tax withholding and simulate changes. Everything stays on your device.",
     },
   },
+  {
+    id: "qr", cat: "utils", nom: "Xoriguer QR", icona: "img/qr.png",
+    versio: "qr/versio.json",          // instal·lador de Windows + APK (Release qr-v…)
+    web: "https://xorigu3r.github.io/xoriguer-qr/",
+    desc: {
+      ca: "Codis QR de la família: emergència i dades mèdiques (fons de pantalla i adhesiu), contactes, negoci, adreces, WiFi i contrasenyes xifrades. Amb el teu logo, estils i lector. Sense Internet: res surt de l’aparell.",
+      es: "Códigos QR de la familia: emergencia y datos médicos (fondo de pantalla y adhesivo), contactos, negocio, direcciones, WiFi y contraseñas cifradas. Con tu logo, estilos y lector. Sin Internet: nada sale del dispositivo.",
+      fr: "Codes QR pour la famille : urgence et données médicales (fond d’écran et autocollant), contacts, entreprise, adresses, WiFi et mots de passe chiffrés. Avec votre logo, des styles et un lecteur. Sans Internet : rien ne quitte l’appareil.",
+      en: "QR codes for the family: emergency and medical info (lock-screen wallpaper and sticker), contacts, business, addresses, WiFi and encrypted passwords. With your own logo, styles and a scanner. No Internet: nothing leaves your device.",
+    },
+  },
 ];

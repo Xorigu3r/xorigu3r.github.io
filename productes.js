@@ -69,8 +69,8 @@ window.PRODUCTES = [
   {
     id: "lectura", cat: "utils", nom: "Lectura · Xoriguer", icona: "img/lectura.png", beta: true,
     // Windows: instal·lador MSI (a la Release també hi ha el ZIP portable). Codi: https://github.com/Xorigu3r/xoriguer-lectura
-    windows: "https://github.com/Xorigu3r/xoriguer-lectura/releases/download/v0.6.1/LecturaXoriguer-Instalador.msi",
-    apk: "https://github.com/Xorigu3r/xoriguer-lectura/releases/download/v0.6.1/LecturaXoriguer.apk",
+    windows: "https://github.com/Xorigu3r/xoriguer-lectura/releases/download/v0.7.0/LecturaXoriguer-Instalador.msi",
+    apk: "https://github.com/Xorigu3r/xoriguer-lectura/releases/download/v0.7.0/LecturaXoriguer.apk",
     desc: {
       ca: "Lector de llibres gratuït i de codi obert: EPUB, PDF, Kindle, Word, còmics… Llibres de domini públic per baixar, lectura en veu alta, diccionari, cites i notes.",
       es: "Lector de libros gratuito y de código abierto: EPUB, PDF, Kindle, Word, cómics… Libros de dominio público para descargar, lectura en voz alta, diccionario, citas y notas.",

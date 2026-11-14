@@ -176,7 +176,7 @@ window.PRODUCTES = [
     id: "onsoc", cat: "utils", nom: "Xoriguer On Sóc", icona: "img/onsoc.png", beta: true,
     windows: false,                    // app web (PWA, també per a iPhone) + APK d'Android
     web: "https://xorigu3r.github.io/xoriguer-onsoc/",
-    apk: "https://github.com/Xorigu3r/xoriguer-onsoc/releases/download/v1.3/XoriguerOnSoc.apk",
+    apk: "https://github.com/Xorigu3r/xoriguer-onsoc/releases/download/v1.4/XoriguerOnSoc.apk",
     desc: {
       ca: "On és la família? Ubicació compartida i xifrada, avís quan arriben o surten d’un lloc, «acompanya’m» amb SOS automàtic, recorregut de 7 dies, fitxa mèdica i botó SOS. Sense comptes: només un codi de família.",
       es: "¿Dónde está la familia? Ubicación compartida y cifrada, aviso cuando llegan o salen de un lugar, «acompáñame» con SOS automático, recorrido de 7 días, ficha médica y botón SOS. Sin cuentas: solo un código de familia.",

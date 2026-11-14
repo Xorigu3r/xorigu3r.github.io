@@ -91,7 +91,7 @@ window.PRODUCTES = [
     },
   },
   {
-    id: "acobert", cat: "esport", nom: "Xoriguer Acobert", icona: "img/acobert.png", beta: true,
+    id: "acobert", cat: "esport", nom: "Xoriguer Acobert", icona: "img/acobert.png", beta: "proves",   // «Beta · Fase de proves»
     versio: "acobert/versio.json",
     desc: {
       ca: "Entrenament a casa amb rodet intel·ligent: sessions guiades, rutes virtuals i potència.",

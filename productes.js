@@ -173,6 +173,18 @@ window.PRODUCTES = [
     },
   },
   {
+    id: "onsoc", cat: "utils", nom: "Xoriguer On Sóc", icona: "img/onsoc.png", beta: true,
+    windows: false,                    // app web (PWA, també per a iPhone) + APK d'Android
+    web: "https://xorigu3r.github.io/xoriguer-onsoc/",
+    apk: "https://github.com/Xorigu3r/xoriguer-onsoc/releases/download/v1.2/XoriguerOnSoc.apk",
+    desc: {
+      ca: "On és la família? Ubicació compartida i xifrada, avís quan arriben o surten d’un lloc, «acompanya’m» amb SOS automàtic, recorregut de 7 dies, fitxa mèdica i botó SOS. Sense comptes: només un codi de família.",
+      es: "¿Dónde está la familia? Ubicación compartida y cifrada, aviso cuando llegan o salen de un lugar, «acompáñame» con SOS automático, recorrido de 7 días, ficha médica y botón SOS. Sin cuentas: solo un código de familia.",
+      fr: "Où est la famille ? Position partagée et chiffrée, alerte quand ils arrivent ou quittent un lieu, « accompagne-moi » avec SOS automatique, trajet sur 7 jours, fiche médicale et bouton SOS. Sans compte : juste un code de famille.",
+      en: "Where’s the family? Encrypted location sharing, alerts when they arrive at or leave a place, “walk me home” with automatic SOS, 7-day route history, medical card and an SOS button. No accounts: just a family code.",
+    },
+  },
+  {
     id: "papers", cat: "utils", nom: "Xoriguer Papers", icona: "img/papers.png", beta: true,
     windows: false,                    // app web (PWA) + APK d'Android
     web: "https://xorigu3r.github.io/xoriguer-papers/",

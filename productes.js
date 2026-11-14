@@ -185,6 +185,18 @@ window.PRODUCTES = [
     },
   },
   {
+    id: "compactador", cat: "utils", nom: "Xoriguer Compactador", icona: "img/compactador.png", beta: true,
+    windows: "https://github.com/Xorigu3r/xoriguer-compactador/releases/download/v1.0/XoriguerCompactador-Instalador.exe",
+    web: "https://xorigu3r.github.io/xoriguer-compactador/",
+    apk: "https://github.com/Xorigu3r/xoriguer-compactador/releases/download/v1.0/XoriguerCompactador.apk",
+    desc: {
+      ca: "Comprimeix i descomprimeix ZIP, RAR, 7Z, TAR, GZ, ISO i 40 formats més, amb contrasenya i en parts. Vista prèvia, prova i conversió. Gratuït, sense anuncis i sense Internet: res surt del teu aparell.",
+      es: "Comprime y descomprime ZIP, RAR, 7Z, TAR, GZ, ISO y 40 formatos más, con contraseña y en partes. Vista previa, prueba y conversión. Gratis, sin anuncios y sin Internet: nada sale de tu dispositivo.",
+      fr: "Compressez et décompressez ZIP, RAR, 7Z, TAR, GZ, ISO et 40 autres formats, avec mot de passe et en plusieurs parties. Aperçu, test et conversion. Gratuit, sans publicité et sans Internet : rien ne quitte votre appareil.",
+      en: "Compress and extract ZIP, RAR, 7Z, TAR, GZ, ISO and 40 more formats, with passwords and split archives. Preview, test and convert. Free, no ads and no Internet: nothing leaves your device.",
+    },
+  },
+  {
     id: "papers", cat: "utils", nom: "Xoriguer Papers", icona: "img/papers.png", beta: true,
     windows: false,                    // app web (PWA) + APK d'Android
     web: "https://xorigu3r.github.io/xoriguer-papers/",

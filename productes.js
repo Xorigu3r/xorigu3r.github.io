@@ -149,6 +149,18 @@ window.PRODUCTES = [
     },
   },
   {
+    id: "sos", cat: "salut", nom: "Xoriguer SOS", icona: "img/sos.png", beta: true,
+    windows: false,                    // app web (PWA, també per a iPhone) + APK d'Android (sos/versio.json)
+    versio: "sos/versio.json",
+    web: "https://xorigu3r.github.io/xoriguer-sos/",
+    desc: {
+      ca: "Botó d’emergència per a gent gran: mantén-lo premut i envia la teva ubicació per SMS als contactes i truca al 112. Compte enrere per cancel·lar, mode prova, fitxa mèdica i sirena. No substitueix els serveis d’emergència.",
+      es: "Botón de emergencia para personas mayores: mantenlo pulsado y envía tu ubicación por SMS a los contactos y llama al 112. Cuenta atrás para cancelar, modo prueba, ficha médica y sirena. No sustituye a los servicios de emergencia.",
+      fr: "Bouton d’urgence pour les personnes âgées : maintenez-le appuyé pour envoyer votre position par SMS à vos contacts et appeler le 112. Compte à rebours pour annuler, mode essai, fiche médicale et sirène. Ne remplace pas les services d’urgence.",
+      en: "An emergency button for older people: hold it down to text your location to your contacts and call 112. Countdown to cancel, test mode, medical card and siren. Does not replace the emergency services.",
+    },
+  },
+  {
     id: "radars", cat: "cotxe", nom: "Xoriguer Radars", icona: "img/radars.png", beta: true,
     windows: false,                    // app web (PWA) + APK d'Android
     web: "https://xorigu3r.github.io/xoriguer-radars/",

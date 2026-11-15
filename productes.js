@@ -238,6 +238,16 @@ window.PRODUCTES = [
     },
   },
   {
+    id: "receptes", cat: "utils", nom: "Xoriguer Receptes", icona: "img/receptes.png", beta: true,
+    versio: "receptes/versio.json",     // instal·lador de Windows + APK (xoriguer.dev); sense versió web
+    desc: {
+      ca: "Les teves receptes amb fotos, ingredients que s’ajusten a les racions, mode cuina pas a pas amb temporitzadors, menú de la setmana i llista de la compra. Importa receptes de webs o de text enganxat. Sense comptes ni anuncis: res surt del teu aparell.",
+      es: "Tus recetas con fotos, ingredientes que se ajustan a las raciones, modo cocina paso a paso con temporizadores, menú de la semana y lista de la compra. Importa recetas de webs o de texto pegado. Sin cuentas ni anuncios: nada sale de tu dispositivo.",
+      fr: "Vos recettes avec photos, ingrédients ajustés au nombre de portions, mode cuisine étape par étape avec minuteries, menu de la semaine et liste de courses. Importez des recettes depuis un site ou un texte collé. Sans compte ni publicité : rien ne quitte votre appareil.",
+      en: "Your recipes with photos, ingredients that scale to the servings, step-by-step cook mode with timers, a weekly menu and a shopping list. Import recipes from websites or pasted text. No accounts, no ads: nothing leaves your device.",
+    },
+  },
+  {
     id: "papers", cat: "utils", nom: "Xoriguer Papers", icona: "img/papers.png", beta: true,
     windows: false,                    // app web (PWA) + APK d'Android
     web: "https://xorigu3r.github.io/xoriguer-papers/",

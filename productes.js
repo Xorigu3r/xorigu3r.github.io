@@ -197,6 +197,23 @@ window.PRODUCTES = [
     },
   },
   {
+    id: "pdf", cat: "utils", nom: "Xoriguer PDF", icona: "img/pdf.png", beta: true,
+    versio: "pdf/versio.json",          // instal·lador de Windows, AppImage de Linux i APK (xoriguer.dev)
+    web: "https://xorigu3r.github.io/xoriguer-pdf/",
+    desc: {
+      ca: "Lector i editor de PDF complet: ressalta, anota, omple formularis, signa, organitza pàgines, combina, divideix, redueix la mida, posa contrasenya i tapa dades. Gratuït, sense anuncis i sense Internet: res surt del teu aparell.",
+      es: "Lector y editor de PDF completo: resalta, anota, rellena formularios, firma, organiza páginas, combina, divide, reduce el tamaño, pone contraseña y tapa datos. Gratis, sin anuncios y sin Internet: nada sale de tu dispositivo.",
+      fr: "Lecteur et éditeur PDF complet : surlignez, annotez, remplissez des formulaires, signez, organisez les pages, fusionnez, divisez, réduisez la taille, protégez par mot de passe et caviardez. Gratuit, sans publicité et sans Internet : rien ne quitte votre appareil.",
+      en: "A complete PDF reader and editor: highlight, annotate, fill in forms, sign, organise pages, merge, split, reduce size, add passwords and redact. Free, no ads and no Internet: nothing leaves your device.",
+    },
+    notaLinux: {
+      ca: "Linux: AppImage (dona-li permís d’execució i obre-la). També hi ha el paquet .deb a xoriguer.dev.",
+      es: "Linux: AppImage (dale permiso de ejecución y ábrela). También está el paquete .deb en xoriguer.dev.",
+      fr: "Linux : AppImage (rendez-la exécutable et ouvrez-la). Le paquet .deb est aussi sur xoriguer.dev.",
+      en: "Linux: AppImage (make it executable and open it). A .deb package is also available on xoriguer.dev.",
+    },
+  },
+  {
     id: "papers", cat: "utils", nom: "Xoriguer Papers", icona: "img/papers.png", beta: true,
     windows: false,                    // app web (PWA) + APK d'Android
     web: "https://xorigu3r.github.io/xoriguer-papers/",

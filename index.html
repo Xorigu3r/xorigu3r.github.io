@@ -219,7 +219,7 @@ function card(p) {
   }
   if (!isMobile && win) notes.push(`<p class="nota">${T.smart}</p>`);
   if (!isMobile && mac) notes.push(`<p class="nota">${T.macNote}</p>`);
-  if (!isMobile && linux) notes.push(`<p class="nota">${T.linuxNote}</p>`);
+  if (!isMobile && linux) notes.push(`<p class="nota">${(p.notaLinux || {})[L] || T.linuxNote}</p>`);
   if (v && v.notes) notes.push(`<p class="nota"><b>${T.news}:</b> ${esc(v.notes)}</p>`);
   if (web) notes.push(`<p class="nota"><a href="#ajuda" data-ajuda style="color:var(--or)">${T.install}</a></p>`);
   if (apk && (!isMobile || isAndroid)) notes.push(`<p class="nota"><a href="#ajuda-apk" data-ajuda="ajuda-apk" style="color:var(--or)">${T.apkHelp}</a></p>`);

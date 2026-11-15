@@ -238,6 +238,17 @@ window.PRODUCTES = [
     },
   },
   {
+    id: "temps", cat: "utils", nom: "Xoriguer Temps", icona: "img/temps.png", beta: true,
+    windows: false,                    // APK d'Android (temps/versio.json)
+    versio: "temps/versio.json",
+    desc: {
+      ca: "La previsió del temps clara i completa: ara, per hores i 16 dies, pluja dels pròxims minuts, consells pràctics, qualitat de l’aire i pol·len, radar de pluja animat i comparativa dels millors models (ECMWF, ICON, Météo-France, Met Office, GFS) amb índex de fiabilitat. Sense comptes ni anuncis.",
+      es: "La previsión del tiempo clara y completa: ahora, por horas y 16 días, lluvia de los próximos minutos, consejos prácticos, calidad del aire y polen, radar de lluvia animado y comparativa de los mejores modelos (ECMWF, ICON, Météo-France, Met Office, GFS) con índice de fiabilidad. Sin cuentas ni anuncios.",
+      fr: "La météo claire et complète : maintenant, heure par heure et sur 16 jours, pluie des prochaines minutes, conseils pratiques, qualité de l’air et pollen, radar de pluie animé et comparaison des meilleurs modèles (ECMWF, ICON, Météo-France, Met Office, GFS) avec indice de fiabilité. Sans compte ni publicité.",
+      en: "A clear, complete weather forecast: now, hourly and 16 days, rain in the next minutes, practical tips, air quality and pollen, an animated rain radar and a comparison of the best models (ECMWF, ICON, Météo-France, Met Office, GFS) with a confidence rating. No accounts, no ads.",
+    },
+  },
+  {
     id: "receptes", cat: "utils", nom: "Xoriguer Receptes", icona: "img/receptes.png", beta: true,
     versio: "receptes/versio.json",     // instal·lador de Windows + APK (xoriguer.dev); sense versió web
     desc: {

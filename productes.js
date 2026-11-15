@@ -226,6 +226,18 @@ window.PRODUCTES = [
     },
   },
   {
+    id: "arxius", cat: "utils", nom: "Xoriguer Arxius", icona: "img/arxius.png", beta: true,
+    windows: false,                    // APK d'Android (arxius/versio.json); la web és una demostració amb arxius d'exemple
+    versio: "arxius/versio.json",
+    web: "https://xorigu3r.github.io/xoriguer-arxius/",
+    desc: {
+      ca: "Explorador d’arxius per a Android: copia, mou, comprimeix (ZIP amb contrasenya, RAR, 7z), veu fotos, vídeos i textos, allibera espai, troba duplicats, carpeta segura xifrada i passa arxius a l’ordinador per wifi. Gratuït, sense anuncis i res surt del mòbil.",
+      es: "Explorador de archivos para Android: copia, mueve, comprime (ZIP con contraseña, RAR, 7z), ve fotos, vídeos y textos, libera espacio, encuentra duplicados, carpeta segura cifrada y pasa archivos al ordenador por wifi. Gratis, sin anuncios y nada sale del móvil.",
+      fr: "Explorateur de fichiers pour Android : copiez, déplacez, compressez (ZIP avec mot de passe, RAR, 7z), voyez photos, vidéos et textes, libérez de l’espace, trouvez les doublons, dossier sécurisé chiffré et transfert vers l’ordinateur par wifi. Gratuit, sans publicité, rien ne quitte le téléphone.",
+      en: "A file explorer for Android: copy, move, compress (password ZIP, RAR, 7z), view photos, videos and text, free up space, find duplicates, an encrypted secure folder and Wi-Fi transfer to your computer. Free, no ads and nothing leaves your phone.",
+    },
+  },
+  {
     id: "papers", cat: "utils", nom: "Xoriguer Papers", icona: "img/papers.png", beta: true,
     windows: false,                    // app web (PWA) + APK d'Android
     web: "https://xorigu3r.github.io/xoriguer-papers/",

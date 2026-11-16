@@ -68,6 +68,7 @@ window.PRODUCTES = [
   },
   {
     id: "lectura", cat: "utils", nom: "Lectura · Xoriguer", icona: "img/lectura.png", beta: true,
+    versio: "lectura/versio.json",      // versió (i baixades) des de xoriguer.dev/versions
     // Windows: instal·lador MSI (a la Release també hi ha el ZIP portable). Codi: https://github.com/Xorigu3r/xoriguer-lectura
     windows: "https://github.com/Xorigu3r/xoriguer-lectura/releases/download/v0.7.0/LecturaXoriguer-Instalador.msi",
     apk: "https://github.com/Xorigu3r/xoriguer-lectura/releases/download/v0.7.0/LecturaXoriguer.apk",
@@ -126,6 +127,7 @@ window.PRODUCTES = [
   },
   {
     id: "gasolina", cat: "cotxe", nom: "Gasolina a prop", icona: "img/gasolina.png",
+    versio: "gasolina/versio.json",      // versió (i baixades) des de xoriguer.dev/versions
     windows: false,                    // app web (PWA) + APK d'Android
     web: "https://xorigu3r.github.io/gasolina/",
     apk: "https://github.com/Xorigu3r/xoriguer-versions/releases/download/gasolina-apk-v1.0.0/XoriguerGasolina.apk",
@@ -138,6 +140,7 @@ window.PRODUCTES = [
   },
   {
     id: "aparcament", cat: "cotxe", nom: "Xoriguer Aparcament", icona: "img/aparcament.png",
+    versio: "aparcament/versio.json",      // versió (i baixades) des de xoriguer.dev/versions
     windows: false,                    // app web (PWA) + APK d'Android
     web: "https://xorigu3r.github.io/xoriguer-aparcament/",
     apk: "https://github.com/Xorigu3r/xoriguer-versions/releases/download/aparcament-apk-v1.0.0/XoriguerAparcament.apk",
@@ -162,6 +165,7 @@ window.PRODUCTES = [
   },
   {
     id: "radars", cat: "cotxe", nom: "Xoriguer Radars", icona: "img/radars.png", beta: true,
+    versio: "radars/versio.json",      // versió (i baixades) des de xoriguer.dev/versions
     windows: false,                    // app web (PWA) + APK d'Android
     web: "https://xorigu3r.github.io/xoriguer-radars/",
     apk: "https://github.com/Xorigu3r/xoriguer-radars/releases/download/v1.4/XoriguerRadars.apk",
@@ -174,6 +178,7 @@ window.PRODUCTES = [
   },
   {
     id: "notificacions", cat: "utils", nom: "Xoriguer Notificacions", icona: "img/notificacions.png", beta: true,
+    versio: "notificacions/versio.json",      // versió (i baixades) des de xoriguer.dev/versions
     windows: false,                    // APK d'Android (la web només ensenya l'app: no pot llegir notificacions)
     web: "https://xorigu3r.github.io/xoriguer-notificacions/",
     apk: "https://github.com/Xorigu3r/xoriguer-notificacions/releases/download/v1.3/XoriguerNotificacions.apk",
@@ -186,6 +191,7 @@ window.PRODUCTES = [
   },
   {
     id: "onsoc", cat: "utils", nom: "Xoriguer On Sóc", icona: "img/onsoc.png", beta: true,
+    versio: "onsoc/versio.json",      // versió (i baixades) des de xoriguer.dev/versions
     windows: false,                    // app web (PWA, també per a iPhone) + APK d'Android
     web: "https://xorigu3r.github.io/xoriguer-onsoc/",
     apk: "https://github.com/Xorigu3r/xoriguer-onsoc/releases/download/v1.4/XoriguerOnSoc.apk",
@@ -198,6 +204,7 @@ window.PRODUCTES = [
   },
   {
     id: "compactador", cat: "utils", nom: "Xoriguer Compactador", icona: "img/compactador.png", beta: true,
+    versio: "compactador/versio.json",      // versió (i baixades) des de xoriguer.dev/versions
     windows: "https://github.com/Xorigu3r/xoriguer-compactador/releases/download/v1.0/XoriguerCompactador-Instalador.exe",
     web: "https://xorigu3r.github.io/xoriguer-compactador/",
     apk: "https://github.com/Xorigu3r/xoriguer-compactador/releases/download/v1.0/XoriguerCompactador.apk",
@@ -305,6 +312,7 @@ window.PRODUCTES = [
   },
   {
     id: "papers", cat: "utils", nom: "Xoriguer Papers", icona: "img/papers.png", beta: true,
+    versio: "papers/versio.json",      // versió (i baixades) des de xoriguer.dev/versions
     windows: false,                    // app web (PWA) + APK d'Android
     web: "https://xorigu3r.github.io/xoriguer-papers/",
     apk: "https://github.com/Xorigu3r/xoriguer-versions/releases/download/papers-apk-v1.0.0/XoriguerPapers.apk",

@@ -261,6 +261,17 @@ window.PRODUCTES = [
     },
   },
   {
+    id: "trucades", cat: "utils", nom: "Xoriguer Trucades", icona: "img/trucades.png", beta: true,
+    windows: false,                    // APK d'Android (trucades/versio.json): telèfon predeterminat
+    versio: "trucades/versio.json",
+    desc: {
+      ca: "Telèfon i contactes per substituir l’app de trucades del mòbil: teclat amb cerca de contactes, recents agrupades i perdudes, contactes (crear, editar, favorits), pantalla de trucada pròpia també amb el mòbil bloquejat, doble SIM, conferència i números bloquejats. Sense anuncis: res surt del mòbil.",
+      es: "Teléfono y contactos para sustituir la app de llamadas del móvil: teclado con búsqueda de contactos, recientes agrupadas y perdidas, contactos (crear, editar, favoritos), pantalla de llamada propia también con el móvil bloqueado, doble SIM, conferencia y números bloqueados. Sin anuncios: nada sale del móvil.",
+      fr: "Téléphone et contacts pour remplacer l’app d’appels du téléphone : clavier avec recherche de contacts, appels récents groupés et manqués, contacts (créer, modifier, favoris), écran d’appel propre même téléphone verrouillé, double SIM, conférence et numéros bloqués. Sans publicité : rien ne quitte le téléphone.",
+      en: "Phone and contacts to replace your phone’s calling app: keypad with contact search, grouped recents and missed calls, contacts (create, edit, favourites), its own call screen even when the phone is locked, dual SIM, conference calls and blocked numbers. No ads: nothing leaves your phone.",
+    },
+  },
+  {
     id: "temps", cat: "utils", nom: "Xoriguer Temps", icona: "img/temps.png", beta: true,
     windows: false,                    // APK d'Android (temps/versio.json)
     versio: "temps/versio.json",

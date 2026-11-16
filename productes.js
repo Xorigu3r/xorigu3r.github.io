@@ -226,6 +226,17 @@ window.PRODUCTES = [
     },
   },
   {
+    id: "musica", cat: "utils", nom: "Xoriguer Música", icona: "img/musica.png", beta: true,
+    versio: "musica/versio.json",       // instal·lador de Windows + APK (xoriguer.dev)
+    web: "https://xorigu3r.github.io/xoriguer-musica/",
+    desc: {
+      ca: "Reproductor de música senzill però complet: àlbums, artistes, carpetes i llistes, cua, aleatori, fosa entre cançons, equalitzador de 10 bandes, lletres sincronitzades, temporitzador per dormir i controls a la pantalla de bloqueig. Gratuït, sense anuncis i sense comptes.",
+      es: "Reproductor de música sencillo pero completo: álbumes, artistas, carpetas y listas, cola, aleatorio, fundido entre canciones, ecualizador de 10 bandas, letras sincronizadas, temporizador para dormir y controles en la pantalla de bloqueo. Gratis, sin anuncios y sin cuentas.",
+      fr: "Un lecteur de musique simple mais complet : albums, artistes, dossiers et playlists, file d’attente, aléatoire, fondu enchaîné, égaliseur 10 bandes, paroles synchronisées, minuterie de sommeil et commandes sur l’écran de verrouillage. Gratuit, sans publicité et sans compte.",
+      en: "A simple yet complete music player: albums, artists, folders and playlists, queue, shuffle, crossfade, a 10-band equaliser, synced lyrics, a sleep timer and lock-screen controls. Free, no ads and no accounts.",
+    },
+  },
+  {
     id: "arxius", cat: "utils", nom: "Xoriguer Arxius", icona: "img/arxius.png", beta: true,
     windows: false,                    // APK d'Android (arxius/versio.json); la web és una demostració amb arxius d'exemple
     versio: "arxius/versio.json",

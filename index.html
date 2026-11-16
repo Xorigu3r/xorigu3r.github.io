@@ -173,7 +173,15 @@ const ua = navigator.userAgent;
 const isIOS = /iPhone|iPad|iPod/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
 const isAndroid = /Android/i.test(ua);
 const isMobile = isIOS || isAndroid;
-const VER = {};   // id -> {versio, url, notes} llegit del versio.json
+const VER = {};
+// Versió al costat del nom. Amb programa de Windows: la seva (i la de l'APK, si té una altra numeració);
+// només APK: la de l'APK; si no, la del versio.json.
+function verText(v) {
+  if (!v) return "";
+  const pc = v.url ? v.versio : "", and = v.apk_versio || "";
+  const txt = pc ? "v" + pc + (and && and !== pc ? " · Android " + and : "") : (and || v.versio) ? "v" + (and || v.versio) : "";
+  return txt ? ` <span class="ver">${esc(txt)}</span>` : "";
+}   // id -> {versio, url, notes} llegit del versio.json
 const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const okUrl = u => /^https:\/\//i.test(String(u || ""));
 // Icones de plataforma dels botons (agafen el color del text del botó)
@@ -224,7 +232,7 @@ function card(p) {
   if (web) notes.push(`<p class="nota"><a href="#ajuda" data-ajuda style="color:var(--or)">${T.install}</a></p>`);
   if (apk && (!isMobile || isAndroid)) notes.push(`<p class="nota"><a href="#ajuda-apk" data-ajuda="ajuda-apk" style="color:var(--or)">${T.apkHelp}</a></p>`);
   return `<section class="card" id="p-${esc(p.id)}">${ico}
-    <h2>${esc(p.nom)}${p.beta ? ` <span class="tag">${p.beta === "proves" ? T.betaTest : T.beta}</span>` : ""}${v && v.versio ? ` <span class="ver">v${esc(v.versio)}</span>` : ""}</h2>
+    <h2>${esc(p.nom)}${p.beta ? ` <span class="tag">${p.beta === "proves" ? T.betaTest : T.beta}</span>` : ""}${verText(v)}</h2>
     <div><p class="desc">${esc((p.desc || {})[L] || (p.desc || {}).ca || "")}</p><div class="plat">${chips}</div></div>
     <div class="acts">${acts.filter(Boolean).join("")}</div>
     ${notes.join("")}${p.salut ? `<p class="salut">${T.health}</p>` : ""}</section>`;

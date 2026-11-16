@@ -264,10 +264,10 @@ window.PRODUCTES = [
     windows: false,                    // APK d'Android (esport/versio.json)
     versio: "esport/versio.json",
     desc: {
-      ca: "Registra les teves sortides de córrer, bici, caminar, muntanya, natació i més: GPS amb la pantalla apagada, mapa del recorregut, pulsòmetre Bluetooth, parcials, zones, millors marques, progrés setmanal i exportació GPX. Sense comptes ni anuncis: tot queda al mòbil.",
-      es: "Registra tus salidas de correr, bici, caminar, montaña, natación y más: GPS con la pantalla apagada, mapa del recorrido, pulsómetro Bluetooth, parciales, zonas, mejores marcas, progreso semanal y exportación GPX. Sin cuentas ni anuncios: todo queda en el móvil.",
-      fr: "Enregistrez vos sorties course, vélo, marche, montagne, natation et plus : GPS écran éteint, carte du parcours, capteur cardio Bluetooth, splits, zones, records, progression hebdomadaire et export GPX. Sans compte ni publicité : tout reste sur le téléphone.",
-      en: "Record your runs, rides, walks, hikes, swims and more: GPS with the screen off, route map, Bluetooth heart rate monitor, splits, zones, personal records, weekly progress and GPX export. No accounts, no ads: everything stays on your phone.",
+      ca: "Registra les teves sortides de córrer, bici, caminar, muntanya, natació i més: GPS amb la pantalla apagada, mapa del recorregut, pulsòmetre i sensors de velocitat, cadència i potència Bluetooth, parcials, zones, millors marques, progrés setmanal i exportació GPX. Sense comptes ni anuncis: tot queda al mòbil.",
+      es: "Registra tus salidas de correr, bici, caminar, montaña, natación y más: GPS con la pantalla apagada, mapa del recorrido, pulsómetro y sensores de velocidad, cadencia y potencia Bluetooth, parciales, zonas, mejores marcas, progreso semanal y exportación GPX. Sin cuentas ni anuncios: todo queda en el móvil.",
+      fr: "Enregistrez vos sorties course, vélo, marche, montagne, natation et plus : GPS écran éteint, carte du parcours, capteurs Bluetooth de fréquence cardiaque, vitesse, cadence et puissance, splits, zones, records, progression hebdomadaire et export GPX. Sans compte ni publicité : tout reste sur le téléphone.",
+      en: "Record your runs, rides, walks, hikes, swims and more: GPS with the screen off, route map, Bluetooth heart rate, speed, cadence and power sensors, splits, zones, personal records, weekly progress and GPX export. No accounts, no ads: everything stays on your phone.",
     },
   },
   {

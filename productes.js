@@ -260,6 +260,17 @@ window.PRODUCTES = [
     },
   },
   {
+    id: "esport", cat: "esport", nom: "Xoriguer Esport", icona: "img/esport.png", beta: true,
+    windows: false,                    // APK d'Android (esport/versio.json)
+    versio: "esport/versio.json",
+    desc: {
+      ca: "Registra les teves sortides de córrer, bici, caminar, muntanya, natació i més: GPS amb la pantalla apagada, mapa del recorregut, pulsòmetre Bluetooth, parcials, zones, millors marques, progrés setmanal i exportació GPX. Sense comptes ni anuncis: tot queda al mòbil.",
+      es: "Registra tus salidas de correr, bici, caminar, montaña, natación y más: GPS con la pantalla apagada, mapa del recorrido, pulsómetro Bluetooth, parciales, zonas, mejores marcas, progreso semanal y exportación GPX. Sin cuentas ni anuncios: todo queda en el móvil.",
+      fr: "Enregistrez vos sorties course, vélo, marche, montagne, natation et plus : GPS écran éteint, carte du parcours, capteur cardio Bluetooth, splits, zones, records, progression hebdomadaire et export GPX. Sans compte ni publicité : tout reste sur le téléphone.",
+      en: "Record your runs, rides, walks, hikes, swims and more: GPS with the screen off, route map, Bluetooth heart rate monitor, splits, zones, personal records, weekly progress and GPX export. No accounts, no ads: everything stays on your phone.",
+    },
+  },
+  {
     id: "receptes", cat: "utils", nom: "Xoriguer Receptes", icona: "img/receptes.png", beta: true,
     versio: "receptes/versio.json",     // instal·lador de Windows + APK (xoriguer.dev); sense versió web
     desc: {

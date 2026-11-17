@@ -233,6 +233,17 @@ window.PRODUCTES = [
     },
   },
   {
+    id: "facturacio", cat: "utils", nom: "Xoriguer Facturació", icona: "img/facturacio.png", beta: true,
+    versio: "facturacio/versio.json",     // instal·lador de Windows (xoriguer.dev)
+    web: "https://xorigu3r.github.io/xoriguer-facturacio/",
+    desc: {
+      ca: "Fes factures i pressupostos en un moment: clients, productes, IVA per línia, descomptes i IRPF, PDF amb el teu logo, enviament per correu (també Hotmail), cobraments, factures recurrents, recordatoris i Excel per al gestor. VeriFactu preparat per activar-lo. Gratuït, sense anuncis i tot al teu ordinador.",
+      es: "Haz facturas y presupuestos en un momento: clientes, productos, IVA por línea, descuentos e IRPF, PDF con tu logo, envío por correo (también Hotmail), cobros, facturas recurrentes, recordatorios y Excel para el gestor. VeriFactu preparado para activarlo. Gratis, sin anuncios y todo en tu ordenador.",
+      fr: "Faites vos factures et devis en un instant : clients, produits, TVA par ligne, remises, PDF avec votre logo, envoi par e-mail (Hotmail aussi), encaissements, factures récurrentes, rappels et Excel pour le comptable. VeriFactu prêt à activer. Gratuit, sans publicité et tout sur votre ordinateur.",
+      en: "Make invoices and quotes in no time: customers, products, VAT per line, discounts and IRPF, PDFs with your logo, e-mail sending (Hotmail too), payments, recurring invoices, reminders and Excel for your accountant. VeriFactu ready to turn on. Free, ad-free and all on your computer.",
+    },
+  },
+  {
     id: "factures", cat: "utils", nom: "Xoriguer Factures", icona: "img/factures.png", beta: true,
     versio: "factures/versio.json",     // instal·lador de Windows + APK (xoriguer.dev)
     web: "https://xorigu3r.github.io/xoriguer-factures/",

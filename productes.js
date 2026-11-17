@@ -312,6 +312,17 @@ window.PRODUCTES = [
     },
   },
   {
+    id: "calendari", cat: "utils", nom: "Xoriguer Calendari", icona: "img/calendari.png", beta: true,
+    windows: false,                    // APK d'Android (calendari/versio.json)
+    versio: "calendari/versio.json",
+    desc: {
+      ca: "Calendari clar i complet: mes, setmana, dia i agenda; esdeveniments que es repeteixen com vulguis, avisos, resum del dia, calendaris de colors, festius de Catalunya, edat dels aniversaris, cerca, giny per a l’escriptori i importar o exportar .ics (Google Calendar, Outlook, iPhone). Sense comptes ni anuncis: tot queda al mòbil.",
+      es: "Calendario claro y completo: mes, semana, día y agenda; eventos que se repiten como quieras, avisos, resumen del día, calendarios de colores, festivos de Cataluña, edad en los cumpleaños, búsqueda, widget para el escritorio e importar o exportar .ics (Google Calendar, Outlook, iPhone). Sin cuentas ni anuncios: todo queda en el móvil.",
+      fr: "Un calendrier clair et complet : mois, semaine, jour et agenda ; événements répétés à votre guise, rappels, résumé du jour, calendriers en couleurs, jours fériés, âge pour les anniversaires, recherche, widget d’écran d’accueil et import ou export .ics (Google Agenda, Outlook, iPhone). Sans compte ni publicité : tout reste sur le téléphone.",
+      en: "A clear, complete calendar: month, week, day and agenda views; events that repeat however you like, reminders, a daily summary, colour-coded calendars, public holidays, ages on birthdays, search, a home-screen widget and .ics import/export (Google Calendar, Outlook, iPhone). No accounts, no ads: everything stays on your phone.",
+    },
+  },
+  {
     id: "esport", cat: "esport", nom: "Xoriguer Esport", icona: "img/esport.png", beta: true,
     windows: false,                    // APK d'Android (esport/versio.json)
     versio: "esport/versio.json",

@@ -279,6 +279,17 @@ window.PRODUCTES = [
     },
   },
   {
+    id: "xoriweb", cat: "utils", nom: "XoriWeb", icona: "img/xoriweb.png", beta: true,
+    windows: false,                    // APK d'Android (xoriweb/versio.json; 92 MB, a baixades.xoriguer.dev)
+    versio: "xoriweb/versio.json",
+    desc: {
+      ca: "Navegador web privat i segur amb el motor de Firefox: bloqueja rastrejadors i anuncis (i uBlock Origin amb un toc), protegeix l’empremta digital, només HTTPS, DNS xifrat, pestanyes privades, bloqueig amb empremta, traducció de pàgines dins el mòbil i barra a dalt o a baix. Sense telemetria, sense anuncis i sense comptes.",
+      es: "Navegador web privado y seguro con el motor de Firefox: bloquea rastreadores y anuncios (y uBlock Origin con un toque), protege la huella digital, solo HTTPS, DNS cifrado, pestañas privadas, bloqueo con huella, traducción de páginas en el móvil y barra arriba o abajo. Sin telemetría, sin anuncios y sin cuentas.",
+      fr: "Navigateur web privé et sûr avec le moteur de Firefox : bloque les traqueurs et les publicités (et uBlock Origin en un geste), protège contre l’empreinte numérique, HTTPS uniquement, DNS chiffré, onglets privés, verrouillage par empreinte, traduction des pages sur le téléphone et barre en haut ou en bas. Sans télémétrie, sans publicité et sans compte.",
+      en: "A private, secure web browser built on the Firefox engine: blocks trackers and ads (plus uBlock Origin in one tap), fingerprinting protection, HTTPS-only, encrypted DNS, private tabs, fingerprint lock, on-device page translation and a top or bottom address bar. No telemetry, no ads and no accounts.",
+    },
+  },
+  {
     id: "temps", cat: "utils", nom: "Xoriguer Temps", icona: "img/temps.png", beta: true,
     windows: false,                    // APK d'Android (temps/versio.json)
     versio: "temps/versio.json",

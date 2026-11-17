@@ -279,6 +279,17 @@ window.PRODUCTES = [
     },
   },
   {
+    id: "xmail", cat: "utils", nom: "Xoriguer Xmail", icona: "img/xmail.png", beta: true,
+    windows: false,                    // APK d'Android (xmail/versio.json)
+    versio: "xmail/versio.json",
+    desc: {
+      ca: "Correu estil Gmail per a diversos comptes (Gmail, Yahoo, iCloud, GMX o qualsevol IMAP): lliscar per arxivar o esborrar amb «Desfés», desfer l’enviament, imatges externes bloquejades, text citat plegat, adjunts, signatura per compte, cancel·lar subscripcions i avisos de correu nou. Connecta directament amb el teu servidor: cap intermediari ni anuncis.",
+      es: "Correo estilo Gmail para varias cuentas (Gmail, Yahoo, iCloud, GMX o cualquier IMAP): deslizar para archivar o borrar con «Deshacer», deshacer el envío, imágenes externas bloqueadas, texto citado plegado, adjuntos, firma por cuenta, cancelar suscripciones y avisos de correo nuevo. Conecta directamente con tu servidor: sin intermediarios ni anuncios.",
+      fr: "Messagerie façon Gmail pour plusieurs comptes (Gmail, Yahoo, iCloud, GMX ou tout IMAP) : glisser pour archiver ou supprimer avec « Annuler », annulation d’envoi, images externes bloquées, texte cité replié, pièces jointes, signature par compte, désabonnement et alertes de nouveaux messages. Connexion directe à votre serveur : aucun intermédiaire ni publicité.",
+      en: "Gmail-style email for several accounts (Gmail, Yahoo, iCloud, GMX or any IMAP): swipe to archive or delete with “Undo”, undo send, external images blocked, quoted text folded, attachments, per-account signature, one-tap unsubscribe and new-mail alerts. Connects straight to your mail server: no middleman, no ads.",
+    },
+  },
+  {
     id: "xoriweb", cat: "utils", nom: "XoriWeb", icona: "img/xoriweb.png", beta: true,
     windows: false,                    // APK d'Android (xoriweb/versio.json; 92 MB, a baixades.xoriguer.dev)
     versio: "xoriweb/versio.json",

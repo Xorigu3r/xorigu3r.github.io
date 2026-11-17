@@ -233,6 +233,17 @@ window.PRODUCTES = [
     },
   },
   {
+    id: "factures", cat: "utils", nom: "Xoriguer Factures", icona: "img/factures.png", beta: true,
+    versio: "factures/versio.json",     // instal·lador de Windows + APK (xoriguer.dev)
+    web: "https://xorigu3r.github.io/xoriguer-factures/",
+    desc: {
+      ca: "Busca al teu Hotmail o Outlook.com les factures entre dues dates, en llegeix la data, l’emissor, el NIF, la base, l’IVA i el total, i les envia al gestor en PDF o en ZIP amb un full resum en Excel. Recordatori dels trimestres i fotos de tiquets. Gratuït i sense anuncis.",
+      es: "Busca en tu Hotmail u Outlook.com las facturas entre dos fechas, lee la fecha, el emisor, el NIF, la base, el IVA y el total, y las envía al gestor en PDF o en ZIP con una hoja resumen en Excel. Recordatorio de los trimestres y fotos de tiques. Gratis y sin anuncios.",
+      fr: "Cherche dans votre Hotmail ou Outlook.com les factures entre deux dates, en lit la date, l’émetteur, le n° fiscal, le HT, la TVA et le TTC, et les envoie à votre comptable en PDF ou en ZIP avec un récapitulatif Excel. Rappel des trimestres et photos de tickets. Gratuit et sans publicité.",
+      en: "Finds the invoices in your Hotmail or Outlook.com between two dates, reads the date, issuer, tax ID, net, VAT and total, and sends them to your accountant as PDFs or a ZIP with an Excel summary. Quarterly reminders and receipt photos. Free and ad-free.",
+    },
+  },
+  {
     id: "musica", cat: "utils", nom: "Xoriguer Música", icona: "img/musica.png", beta: true,
     versio: "musica/versio.json",       // instal·lador de Windows + APK (xoriguer.dev)
     web: "https://xorigu3r.github.io/xoriguer-musica/",

@@ -12,7 +12,7 @@
 //  - apk:     enllaç a l'APK d'Android (opcional). Si el versio.json porta "apk", té prioritat.
 //  - beta:    true = surt l'etiqueta «Beta».
 //  - salut:   true = surt l'avís «No substitueix el criteri mèdic».
-//  - cat:     categoria (jocs, esport, salut, cotxe, utils). Els noms i l'ordre són a CATEGORIES (index.html).
+//  - cat:     categoria (jocs, utils, cuina, esport, salut, cotxe). Els noms i l'ordre són a CATEGORIES (index.html).
 // =====================================================================================
 
 // Enllaç de baixada directa del Google Drive (salta la pàgina de "no es pot analitzar")
@@ -345,7 +345,23 @@ window.PRODUCTES = [
     },
   },
   {
-    id: "receptes", cat: "utils", nom: "Xoriguer Receptes", icona: "img/receptes.png", beta: true,
+    id: "gastro", cat: "cuina", nom: "Xoriguer Gastro", icona: "img/gastro.png", beta: true,
+    versio: "gastro/versio.json",       // Windows + APK (tauletes) + Linux (xoriguer.dev); codi: https://github.com/Xorigu3r/xoriguer-gastro
+    notaLinux: {
+      ca: "Linux (Ubuntu, Mint, Debian, Fedora…): descomprimeix-lo i obre <b>xoriguer-gastro</b> (o <b>instal-la.sh</b> per posar-lo al menú). Cal Python 3. A Debian, Ubuntu i Mint també hi ha el <a href=\"https://baixades.xoriguer.dev/xoriguer-gastro_3.4_all.deb\" style=\"color:var(--or)\">paquet .deb</a>.",
+      es: "Linux (Ubuntu, Mint, Debian, Fedora…): descomprímelo y abre <b>xoriguer-gastro</b> (o <b>instal-la.sh</b> para ponerlo en el menú). Necesita Python 3. Para Debian, Ubuntu y Mint también hay el <a href=\"https://baixades.xoriguer.dev/xoriguer-gastro_3.4_all.deb\" style=\"color:var(--or)\">paquete .deb</a>.",
+      fr: "Linux (Ubuntu, Mint, Debian, Fedora…) : décompressez-le et ouvrez <b>xoriguer-gastro</b> (ou <b>instal-la.sh</b> pour l’ajouter au menu). Python 3 requis. Pour Debian, Ubuntu et Mint, il existe aussi le <a href=\"https://baixades.xoriguer.dev/xoriguer-gastro_3.4_all.deb\" style=\"color:var(--or)\">paquet .deb</a>.",
+      en: "Linux (Ubuntu, Mint, Debian, Fedora…): extract it and open <b>xoriguer-gastro</b> (or run <b>instal-la.sh</b> to add it to the menu). Needs Python 3. For Debian, Ubuntu and Mint there’s also a <a href=\"https://baixades.xoriguer.dev/xoriguer-gastro_3.4_all.deb\" style=\"color:var(--or)\">.deb package</a>.",
+    },
+    desc: {
+      ca: "Escandalls i gestió de cuina per a bars i restaurants: cost de cada plat amb sub-receptes, al·lèrgens i nutrició, compres que actualitzen preus i estoc, inventari, comandes per WhatsApp, vendes, enginyeria de menú, food cost real, carta digital amb QR, menú del dia i APPCC. Base de 70 plats i 124 ingredients. Per a PC (Windows i Linux) i tauletes Android.",
+      es: "Escandallos y gestión de cocina para bares y restaurantes: coste de cada plato con sub-recetas, alérgenos y nutrición, compras que actualizan precios y stock, inventario, pedidos por WhatsApp, ventas, ingeniería de menú, food cost real, carta digital con QR, menú del día y APPCC. Base de 70 platos y 124 ingredientes. Para PC (Windows y Linux) y tabletas Android.",
+      fr: "Fiches de coût et gestion de cuisine pour bars et restaurants : coût de chaque plat avec sous-recettes, allergènes et nutrition, achats qui mettent à jour prix et stock, inventaire, commandes par WhatsApp, ventes, ingénierie de menu, food cost réel, carte numérique avec QR, menu du jour et HACCP. Base de 70 plats et 124 ingrédients. Pour PC (Windows et Linux) et tablettes Android.",
+      en: "Recipe costing and kitchen management for bars and restaurants: cost per dish with sub-recipes, allergens and nutrition, purchases that update prices and stock, stocktakes, WhatsApp orders, sales, menu engineering, actual food cost, digital QR menu, set menus and HACCP. Library of 70 dishes and 124 ingredients. For PC (Windows and Linux) and Android tablets.",
+    },
+  },
+  {
+    id: "receptes", cat: "cuina", nom: "Xoriguer Receptes", icona: "img/receptes.png", beta: true,
     versio: "receptes/versio.json",     // instal·lador de Windows + APK (xoriguer.dev); sense versió web
     desc: {
       ca: "Les teves receptes amb fotos, ingredients que s’ajusten a les racions, mode cuina pas a pas amb temporitzadors, menú de la setmana i llista de la compra. Importa receptes de webs o de text enganxat. Sense comptes ni anuncis: res surt del teu aparell.",

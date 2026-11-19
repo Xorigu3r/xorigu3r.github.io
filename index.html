@@ -4,14 +4,22 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#0B0F14">
-<title>Xoriguer · Descàrregues</title>
-<meta name="description" content="Programes i apps gratis de la família Xoriguer: jocs (Botifarra, Dòmino, Paraules), productivitat, esport, salut i cotxe.">
+<title>Xoriguer · Programes i apps gratis per a Windows, Android i web</title>
+<meta name="description" content="Programes i apps gratis, sense anuncis i en català: jocs (Botifarra, Dòmino, Paraules), PDF, factures, compressor, cercador de fitxers, receptes, esport, salut i cotxe. Per a Windows, Android, iPhone i web.">
+<link rel="canonical" href="https://xorigu3r.github.io/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="author" content="Xavier Musté">
 <link rel="icon" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/xoriguer-logo.png">
+<!--SEO-->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Xoriguer · Programes i apps gratis">
 <meta property="og:description" content="Jocs, productivitat, esport, salut i cotxe: apps de la família Xoriguer per al mòbil i l’ordinador.">
 <meta property="og:image" content="https://xorigu3r.github.io/img/xoriguer-logo.png">
 <meta property="og:url" content="https://xorigu3r.github.io/">
+<meta property="og:site_name" content="Xoriguer">
+<meta property="og:locale" content="ca_ES">
+<meta name="twitter:card" content="summary_large_image">
 <style>
 :root{--or:#FF8A00;--bg:#0B0F14;--card:#151b23;--fg:#F6F6F6;--mut:#a9b1bb;--bd:#2a323d;--btn2:#232b36;--ok:#3fb26b}
 @media (prefers-color-scheme: light){:root{--bg:#F6F6F6;--card:#ffffff;--fg:#0B0F14;--mut:#5b6470;--bd:#dde1e6;--btn2:#eceff2}}
@@ -78,12 +86,12 @@ footer{text-align:center;color:var(--mut);font-size:13px;margin-top:18px}
 <main>
   <header>
     <nav class="top"><a class="topl" id="mail" href="#"><span aria-hidden="true">✉</span> <span data-t="contact"></span></a><a class="topl dn" href="#dona"><svg class="ppl" viewBox="0 0 24 24" aria-hidden="true"><path fill="#003087" d="M7.016 19.198h-4.2a.562.562 0 0 1-.555-.65L5.093.584A.692.692 0 0 1 5.776 0h7.222c3.417 0 5.904 2.488 5.846 5.5-.006.25-.027.5-.066.747A6.794 6.794 0 0 1 12.071 12H8.743a.69.69 0 0 0-.682.583l-.325 2.056-.013.083-.692 4.39-.015.087z"/><path fill="#009CDE" d="M19.79 6.142c-.01.087-.01.175-.023.261a7.76 7.76 0 0 1-7.695 6.598H9.007l-.283 1.795-.013.083-.692 4.39-.134.843-.014.088H6.86l-.497 3.15a.562.562 0 0 0 .555.65h3.94a.69.69 0 0 0 .683-.582l.639-4.051a.69.69 0 0 1 .682-.583h2.234a5.938 5.938 0 0 0 5.887-5.03 4.558 4.558 0 0 0-1.193-3.612z"/></svg> <span data-t="donate"></span></a></nav>
-    <img src="img/xoriguer-logo.png" alt="Xoriguer" width="720" height="161">
+    <h1 style="margin:0"><img src="img/xoriguer-logo.png" alt="Xoriguer · Programes i apps gratis" width="720" height="161"></h1>
     <p data-t="sub"></p>
   </header>
   <div class="lang" id="lang"></div>
   <nav class="cats" id="cats" aria-label="Categories"></nav>
-  <div id="llista"></div>
+  <div id="llista"><!--LLISTA--></div>
 
   <section class="dona" id="dona">
     <h2>☕ <span data-t="donaT"></span></h2>
@@ -165,7 +173,9 @@ en:{apkHelp:"Play Protect won’t let you install the APK?",apkTitle:"How to ins
  donate:"Donate",contact:"Contact",write:"Write to me",donaT:"Support Xoriguer",donaD:"All the apps are free. If you find them useful and want to help make new ones, you can make a voluntary donation of any amount.",donaB:"Donate with <b>PayPal</b>",contactD:"Ideas, bugs or questions:",all:"All",
  c_jocs:"Games",c_utils:"Productivity",c_cuina:"Cooking",c_esport:"Sport",c_salut:"Health",c_cotxe:"Car"}};
 
-let L = (() => { let o = ""; try { o = localStorage.getItem("xoriguer_idioma") || "" } catch (e) {}
+// Les còpies /ca/ /es/ /fr/ /en/ (munta.py, per als buscadors) porten window.LANG_FIXA
+const FIXA = window.LANG_FIXA || "";
+let L = FIXA || (() => { let o = ""; try { o = localStorage.getItem("xoriguer_idioma") || "" } catch (e) {}
   if (TX[o]) return o;
   for (const l of (navigator.languages || [navigator.language])) { const c = String(l || "").slice(0, 2); if (TX[c]) return c }
   return "en" })();
@@ -206,7 +216,7 @@ function card(p) {
   const mac = (v && okUrl(v.mac)) ? v.mac : (okUrl(p.mac) ? p.mac : "");
   const linux = (v && okUrl(v.linux)) ? v.linux : (okUrl(p.linux) ? p.linux : "");
   const desktopOnly = !web && !apk;
-  const ico = p.icona ? `<img class="ico" src="${esc(p.icona)}" alt="" width="64" height="64" loading="lazy">`
+  const ico = p.icona ? `<img class="ico" src="${esc(/^(https?:)?\//.test(p.icona) ? p.icona : (FIXA ? "/" : "") + p.icona)}" alt="${esc(p.nom)}" width="64" height="64" loading="lazy">`
                       : `<div class="ico ini">${esc(p.inicials || p.nom[0])}</div>`;
   const chips = [win || (p.versio && !senseWin) ? T.pcP : "", mac ? "Mac" : "", linux ? "Linux" : "", apk ? "Android" : "", web ? T.web + " · " + T.mob : ""].filter(Boolean)
     .map(c => `<span class="chip">${esc(c)}</span>`).join("");
@@ -274,7 +284,8 @@ function render() {
   document.getElementById("lang").innerHTML = Object.entries({ca:"Català",es:"Español",fr:"Français",en:"English"})
     .map(([k, n]) => `<button data-l="${k}" class="${k === L ? "on" : ""}">${n}</button>`).join("");
   document.querySelectorAll("#lang button").forEach(b => b.onclick = () => {
-    L = b.dataset.l; try { localStorage.setItem("xoriguer_idioma", L) } catch (e) {} render() });
+    L = b.dataset.l; try { localStorage.setItem("xoriguer_idioma", L) } catch (e) {}
+    if (FIXA) { location.href = "/" + L + "/" + location.hash; return } render() });
   ["mail", "mail2"].forEach(id => { document.getElementById(id).href = "mailto:" + MAIL });
   document.getElementById("paypal").href = PAYPAL;
   llista();

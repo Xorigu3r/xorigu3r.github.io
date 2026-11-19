@@ -345,6 +345,16 @@ window.PRODUCTES = [
     },
   },
   {
+    id: "cercador", cat: "utils", nom: "Xoriguer Cercador", icona: "img/cercador.png",
+    versio: "cercador/versio.json",   // .exe portable (xoriguer.dev); codi: https://github.com/Xorigu3r/xoriguer-cercador
+    desc: {
+      ca: "Cerca fitxers per tipus en un disc dur (fotos, vídeos, música, documents, comprimits o les extensions que vulguis) i els copia a una carpeta, a un altre disc o a un pendrive. Un disc sencer en pocs segons, omet les carpetes del sistema i els duplicats, i avisa si no hi ha espai o si el pendrive és FAT32. No cal instal·lar-lo.",
+      es: "Busca archivos por tipo en un disco duro (fotos, vídeos, música, documentos, comprimidos o las extensiones que quieras) y los copia a una carpeta, a otro disco o a un pendrive. Un disco entero en pocos segundos, omite las carpetas del sistema y los duplicados, y avisa si no hay espacio o si el pendrive es FAT32. No hace falta instalarlo.",
+      fr: "Recherche des fichiers par type sur un disque dur (photos, vidéos, musique, documents, archives ou les extensions de votre choix) et les copie vers un dossier, un autre disque ou une clé USB. Un disque entier en quelques secondes, ignore les dossiers système et les doublons, et prévient s’il manque de place ou si la clé est en FAT32. Sans installation.",
+      en: "Finds files by type on a hard drive (photos, videos, music, documents, archives or any extension you like) and copies them to a folder, another drive or a USB stick. A whole drive in a few seconds, skips system folders and duplicates, and warns if there isn’t enough space or the USB stick is FAT32. No installation needed.",
+    },
+  },
+  {
     id: "pconfigurador", cat: "utils", nom: "Xoriguer PConfigurador", icona: "img/pconfigurador.png", beta: true,
     versio: "pconfigurador/versio.json",   // .exe portable + AppImage de Linux + APK (xoriguer.dev); codi: https://github.com/Xorigu3r/xoriguer-pconfigurador
     web: "https://xorigu3r.github.io/xoriguer-pconfigurador/",

@@ -266,17 +266,6 @@ window.PRODUCTES = [
     },
   },
   {
-    id: "flac", cat: "utils", nom: "Xoriguer FLAC", icona: "img/flac.png", beta: true,
-    versio: "flac/versio.json",         // instal·lador de Windows + APK (xoriguer.dev)
-    web: "https://xorigu3r.github.io/xoriguer-flac/",
-    desc: {
-      ca: "Cerca música en qualitat FLAC, gratis i legal, per artista, àlbum o cançó: més de 450.000 enregistraments d'Internet Archive (concerts autoritzats pels grups, segells independents i música amb llicència lliure). Escolta-la al moment o baixa-la. Sense anuncis i sense comptes.",
-      es: "Busca música en calidad FLAC, gratis y legal, por artista, álbum o canción: más de 450.000 grabaciones de Internet Archive (conciertos autorizados por los grupos, sellos independientes y música con licencia libre). Escúchala al momento o descárgala. Sin anuncios y sin cuentas.",
-      fr: "Recherchez de la musique en qualité FLAC, gratuite et légale, par artiste, album ou titre : plus de 450 000 enregistrements d’Internet Archive (concerts autorisés par les groupes, labels indépendants et musique sous licence libre). Écoutez-la tout de suite ou téléchargez-la. Sans publicité et sans compte.",
-      en: "Search for FLAC-quality music, free and legal, by artist, album or song: over 450,000 recordings from the Internet Archive (concerts authorised by the bands, independent labels and freely licensed music). Listen right away or download it. No ads and no accounts.",
-    },
-  },
-  {
     id: "arxius", cat: "utils", nom: "Xoriguer Arxius", icona: "img/arxius.png", beta: true,
     windows: false,                    // APK d'Android (arxius/versio.json); la web és una demostració amb arxius d'exemple
     versio: "arxius/versio.json",

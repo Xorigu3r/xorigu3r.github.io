@@ -411,4 +411,14 @@ window.PRODUCTES = [
       en: "QR codes for the family: emergency and medical info (lock-screen wallpaper and sticker), contacts, business, addresses, WiFi and encrypted passwords. With your own logo, styles and a scanner. No Internet: nothing leaves your device.",
     },
   },
+  {
+    id: "fotos", cat: "utils", nom: "Xoriguer Fotos", icona: "img/fotos.png",
+    versio: "fotos/versio.json",      // instal·lador de Windows (xoriguer.dev); codi: https://github.com/Xorigu3r/xoriguer-fotos
+    desc: {
+      ca: "Visualitzador i editor de fotos ràpid per a Windows: miniatures instantànies, pantalla completa amb zoom i presentació, i passar a la foto següent sense esperes. Retalla, gira, canvia la mida, ajusta la llum i els colors i aplica efectes, conservant les dades EXIF. També converteix i redimensiona fotos per lots.",
+      es: "Visor y editor de fotos rápido para Windows: miniaturas instantáneas, pantalla completa con zoom y presentación, y pasar a la foto siguiente sin esperas. Recorta, gira, cambia el tamaño, ajusta la luz y los colores y aplica efectos, conservando los datos EXIF. También convierte y redimensiona fotos por lotes.",
+      fr: "Visionneuse et éditeur de photos rapide pour Windows : vignettes instantanées, plein écran avec zoom et diaporama, et passage à la photo suivante sans attente. Rognez, pivotez, redimensionnez, réglez la lumière et les couleurs et appliquez des effets, en conservant les données EXIF. Convertit et redimensionne aussi les photos par lots.",
+      en: "A fast photo viewer and editor for Windows: instant thumbnails, full screen with zoom and slideshow, and no waiting when you move to the next photo. Crop, rotate, resize, adjust light and colours and apply effects while keeping the EXIF data. It also converts and resizes photos in batches.",
+    },
+  },
 ];

@@ -345,6 +345,23 @@ window.PRODUCTES = [
     },
   },
   {
+    id: "pconfigurador", cat: "utils", nom: "Xoriguer PConfigurador", icona: "img/pconfigurador.png", beta: true,
+    versio: "pconfigurador/versio.json",   // .exe portable + AppImage de Linux + APK (xoriguer.dev); codi: https://github.com/Xorigu3r/xoriguer-pconfigurador
+    web: "https://xorigu3r.github.io/xoriguer-pconfigurador/",
+    desc: {
+      ca: "Configurador de PC per pressupost: tria l’ús (gamer, streaming, oficina o navegar i correu) i quant vols gastar, i et munta un PC peça a peça compatible i equilibrat, sense colls d’ampolla. Preus reals d’Alternate i LDLC amb enllaç de compra, i pots canviar qualsevol peça. Sense anuncis ni enllaços d’afiliat.",
+      es: "Configurador de PC por presupuesto: elige el uso (gaming, streaming, oficina o navegar y correo) y cuánto quieres gastar, y te monta un PC pieza a pieza compatible y equilibrado, sin cuellos de botella. Precios reales de Alternate y LDLC con enlace de compra, y puedes cambiar cualquier pieza. Sin anuncios ni enlaces de afiliado.",
+      fr: "Configurateur de PC selon le budget : choisissez l’usage (gaming, streaming, bureautique ou navigation et e-mail) et combien vous voulez dépenser, et il monte un PC pièce par pièce compatible et équilibré, sans goulot d’étranglement. Prix réels d’Alternate et LDLC avec lien d’achat, et vous pouvez changer n’importe quelle pièce. Sans publicité ni liens d’affiliation.",
+      en: "A budget PC builder: pick the use (gaming, streaming, office or browsing and email) and how much you want to spend, and it builds a compatible, balanced PC part by part, with no bottlenecks. Real prices from Alternate and LDLC with buy links, and you can swap any part. No ads and no affiliate links.",
+    },
+    notaLinux: {
+      ca: "Linux: AppImage (dona-li permís d’execució i obre-la). A la web, sense preus en directe: fes servir l’app per tenir-los al dia.",
+      es: "Linux: AppImage (dale permiso de ejecución y ábrela). En la web, sin precios en directo: usa la app para tenerlos al día.",
+      fr: "Linux : AppImage (rendez-la exécutable et ouvrez-la). Sur le web, pas de prix en direct : utilisez l’appli pour les avoir à jour.",
+      en: "Linux: AppImage (make it executable and open it). The web version has no live prices: use the app to keep them up to date.",
+    },
+  },
+  {
     id: "gastro", cat: "cuina", nom: "Xoriguer Gastro", icona: "img/gastro.png", beta: true,
     versio: "gastro/versio.json",       // Windows + APK (tauletes) + Linux (xoriguer.dev); codi: https://github.com/Xorigu3r/xoriguer-gastro
     notaLinux: {

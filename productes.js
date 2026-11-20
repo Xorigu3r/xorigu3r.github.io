@@ -178,14 +178,15 @@ window.PRODUCTES = [
   },
   {
     id: "soci", cat: "utils", nom: "Xoriguer Soci", icona: "img/soci.png", beta: true,
+    versio: "soci/versio.json",      // versió i APK (65 MB, a baixades.xoriguer.dev) des de xoriguer.dev/versions
     windows: false,                    // APK d'Android (la web només avisa amb la pàgina oberta)
     web: "https://xorigu3r.github.io/xoriguer-soci/",
-    apk: "https://github.com/Xorigu3r/xoriguer-soci/releases/download/v1.0.0/XoriguerSoci.apk",
+    apk: "https://github.com/Xorigu3r/xoriguer-soci/releases/download/v1.2.0/XoriguerSoci.apk",
     desc: {
-      ca: "Assistent de veu: «Hey Soci, apunta: Macro, comprar patates el dijous, avisa’m». Ho entén, ho apunta i el dijous t’ho recorda parlant. Dies, hores, repeticions i avís previ; llistes per lloc, notes i preguntes («què tinc demà?»). Giny i botó a la barra ràpida. Sense Internet: res surt del mòbil.",
-      es: "Asistente de voz: «Hey Soci, apunta: Makro, comprar patatas el jueves, avísame». Lo entiende, lo apunta y el jueves te lo recuerda hablando. Días, horas, repeticiones y aviso previo; listas por lugar, notas y preguntas («¿qué tengo mañana?»). Widget y botón en los ajustes rápidos. Sin Internet: nada sale del móvil.",
-      fr: "Assistant vocal : « Hey Soci, note : Metro, acheter des pommes de terre jeudi, préviens-moi ». Il comprend, il note et jeudi il vous le rappelle à voix haute. Jours, heures, répétitions et rappel anticipé ; listes par lieu, notes et questions (« qu’est-ce que j’ai demain ? »). Widget et bouton dans les réglages rapides. Sans Internet : rien ne quitte le téléphone.",
-      en: "Voice assistant: “Hey Soci, note: Costco, buy potatoes on Thursday, remind me”. It understands, notes it down and on Thursday reminds you out loud. Days, times, repeats and early reminders; lists by place, notes and questions (“what do I have tomorrow?”). Widget and quick-settings button. No Internet access: nothing leaves your phone.",
+      ca: "Assistent de veu que t’avisa parlant: «hey soci, quan arribi al Mercadona compra llet», «recorda’m la pastilla cada dia a les 9 fins que ho faci». Li respons parlant («fet», «d’aquí 10 minuts»), canvies el que ja hi ha («mou el dentista a divendres»), «on he aparcat?», llistes per lloc, notes i calendari. «Hey soci» sense connexió. Sense Internet ni comptes: res surt del mòbil.",
+      es: "Asistente de voz que te avisa hablando: «hey soci, cuando llegue al Mercadona compra leche», «recuérdame la pastilla cada día a las 9 hasta que lo haga». Le respondes hablando («hecho», «dentro de 10 minutos»), cambias lo que ya hay («mueve el dentista al viernes»), «¿dónde he aparcado?», listas por lugar, notas y calendario. «Hey soci» sin conexión. Sin Internet ni cuentas: nada sale del móvil.",
+      fr: "Assistant vocal qui vous prévient à voix haute : « hey soci, quand j’arrive chez Lidl, achète du lait », « rappelle-moi le médicament tous les jours à 9 h jusqu’à ce que je le fasse ». Vous lui répondez de vive voix (« fait », « dans 10 minutes »), modifiez ce qui existe (« déplace le dentiste à vendredi »), « où est ma voiture ? », listes par lieu, notes et calendrier. « Hey soci » hors connexion. Sans Internet ni compte : rien ne quitte le téléphone.",
+      en: "A voice assistant that reminds you out loud: “hey soci, when I get to Tesco buy milk”, “remind me to take my pill every day at 9 and keep reminding me”. Reply by voice (“done”, “in 10 minutes”), change what’s there (“move the dentist to Friday”), “where did I park?”, lists by place, notes and calendar. Offline “hey soci”. No Internet access, no accounts: nothing leaves your phone.",
     },
   },
   {

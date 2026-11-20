@@ -177,6 +177,18 @@ window.PRODUCTES = [
     },
   },
   {
+    id: "soci", cat: "utils", nom: "Xoriguer Soci", icona: "img/soci.png", beta: true,
+    windows: false,                    // APK d'Android (la web només avisa amb la pàgina oberta)
+    web: "https://xorigu3r.github.io/xoriguer-soci/",
+    apk: "https://github.com/Xorigu3r/xoriguer-soci/releases/download/v1.0.0/XoriguerSoci.apk",
+    desc: {
+      ca: "Assistent de veu: «Hey Soci, apunta: Macro, comprar patates el dijous, avisa’m». Ho entén, ho apunta i el dijous t’ho recorda parlant. Dies, hores, repeticions i avís previ; llistes per lloc, notes i preguntes («què tinc demà?»). Giny i botó a la barra ràpida. Sense Internet: res surt del mòbil.",
+      es: "Asistente de voz: «Hey Soci, apunta: Makro, comprar patatas el jueves, avísame». Lo entiende, lo apunta y el jueves te lo recuerda hablando. Días, horas, repeticiones y aviso previo; listas por lugar, notas y preguntas («¿qué tengo mañana?»). Widget y botón en los ajustes rápidos. Sin Internet: nada sale del móvil.",
+      fr: "Assistant vocal : « Hey Soci, note : Metro, acheter des pommes de terre jeudi, préviens-moi ». Il comprend, il note et jeudi il vous le rappelle à voix haute. Jours, heures, répétitions et rappel anticipé ; listes par lieu, notes et questions (« qu’est-ce que j’ai demain ? »). Widget et bouton dans les réglages rapides. Sans Internet : rien ne quitte le téléphone.",
+      en: "Voice assistant: “Hey Soci, note: Costco, buy potatoes on Thursday, remind me”. It understands, notes it down and on Thursday reminds you out loud. Days, times, repeats and early reminders; lists by place, notes and questions (“what do I have tomorrow?”). Widget and quick-settings button. No Internet access: nothing leaves your phone.",
+    },
+  },
+  {
     id: "notificacions", cat: "utils", nom: "Xoriguer Notificacions", icona: "img/notificacions.png", beta: true,
     versio: "notificacions/versio.json",      // versió (i baixades) des de xoriguer.dev/versions
     windows: false,                    // APK d'Android (la web només ensenya l'app: no pot llegir notificacions)

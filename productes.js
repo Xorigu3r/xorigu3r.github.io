@@ -216,6 +216,16 @@ window.PRODUCTES = [
     },
   },
   {
+    id: "temes", cat: "utils", nom: "Xoriguer Temes", icona: "img/temes.png", beta: true,
+    versio: "temes/versio.json",        // instal·lador de Windows i APK (xoriguer.dev)
+    desc: {
+      ca: "Crea temes per al teu Xiaomi, Redmi o POCO (MIUI): icones en sis estils (planes, 3D, del color de cada app…), fons de pantalla amb el xoriguer (també en or) i colors per a les pantalles del sistema com Configuració. Detecta el model i aplica el tema al telèfon: des de l’ordinador per USB o des del mateix mòbil.",
+      es: "Crea temas para tu Xiaomi, Redmi o POCO (MIUI): iconos en seis estilos (planos, 3D, del color de cada app…), fondos de pantalla con el cernícalo (también en oro) y colores para las pantallas del sistema como Ajustes. Detecta el modelo y aplica el tema al teléfono: desde el ordenador por USB o desde el mismo móvil.",
+      fr: "Créez des thèmes pour votre Xiaomi, Redmi ou POCO (MIUI) : icônes en six styles (plates, 3D, à la couleur de chaque appli…), fonds d’écran avec le faucon (aussi en or) et couleurs pour les écrans système comme Paramètres. Détecte le modèle et applique le thème : depuis l’ordinateur par USB ou depuis le mobile.",
+      en: "Make themes for your Xiaomi, Redmi or POCO (MIUI): icons in six styles (flat, 3D, in each app’s colour…), wallpapers with the kestrel (gold too) and colours for system screens such as Settings. It detects the model and applies the theme: from the computer over USB or from the phone itself.",
+    },
+  },
+  {
     id: "compactador", cat: "utils", nom: "Xoriguer Compactador", icona: "img/compactador.png", beta: true,
     versio: "compactador/versio.json",      // versió (i baixades) des de xoriguer.dev/versions
     windows: "https://github.com/Xorigu3r/xoriguer-compactador/releases/download/v1.0/XoriguerCompactador-Instalador.exe",

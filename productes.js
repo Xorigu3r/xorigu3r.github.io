@@ -445,6 +445,17 @@ window.PRODUCTES = [
     },
   },
   {
+    id: "escaner", cat: "utils", nom: "Xoriguer Escàner", icona: "img/escaner.png",
+    versio: "escaner/versio.json",     // instal·lador de Windows + APK (xoriguer.dev)
+    web: "https://xorigu3r.github.io/xoriguer-escaner/",
+    desc: {
+      ca: "Lector i creador de codis de barres i QR: més de 30 formats amb la càmera, imatges, PDF, la pantalla o un lector USB. Et diu quin codi és, avisa dels enllaços perillosos i mostra la fitxa del producte (Nutri-Score, al·lèrgens). Inventari amb quantitats, comprovació amb una llista d’Excel, 29 tipus de codis per crear (també molts de cop des d’un Excel) i bloqueig amb PIN. Sense anuncis.",
+      es: "Lector y creador de códigos de barras y QR: más de 30 formatos con la cámara, imágenes, PDF, la pantalla o un lector USB. Te dice qué código es, avisa de los enlaces peligrosos y muestra la ficha del producto (Nutri-Score, alérgenos). Inventario con cantidades, comprobación con una lista de Excel, 29 tipos de códigos para crear (también muchos a la vez desde un Excel) y bloqueo con PIN. Sin anuncios.",
+      fr: "Lecteur et créateur de codes-barres et de QR codes : plus de 30 formats avec la caméra, des images, des PDF, l’écran ou un lecteur USB. Il indique le type de code, signale les liens dangereux et affiche la fiche du produit (Nutri-Score, allergènes). Inventaire avec quantités, vérification avec une liste Excel, 29 types de codes à créer (aussi en série depuis Excel) et verrouillage par code PIN. Sans publicité.",
+      en: "Barcode and QR code reader and creator: over 30 formats from the camera, images, PDFs, the screen or a USB scanner. It tells you what kind of code it is, warns about dangerous links and shows product details (Nutri-Score, allergens). Stocktaking with quantities, checking against an Excel list, 29 code types to create (also in bulk from Excel) and PIN lock. No ads.",
+    },
+  },
+  {
     id: "fotos", cat: "utils", nom: "Xoriguer Fotos", icona: "img/fotos.png",
     versio: "fotos/versio.json",      // instal·lador de Windows (xoriguer.dev); codi: https://github.com/Xorigu3r/xoriguer-fotos
     desc: {

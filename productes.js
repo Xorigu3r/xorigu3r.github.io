@@ -256,6 +256,17 @@ window.PRODUCTES = [
     },
   },
   {
+    id: "excel", cat: "utils", nom: "Xoriguer Excel", icona: "img/excel.png",
+    versio: "excel/versio.json",       // instal·lador de Windows + APK (xoriguer.dev)
+    web: "https://xorigu3r.github.io/xoriguer-excel/",
+    desc: {
+      ca: "Full de càlcul àgil i molt ràpid: crea, obre i edita Excel (.xlsx, .xls, .xlsm, .xlsb), OpenDocument (.ods) i CSV. Més de 150 fórmules (també en català: SUMA, SI, CERCAV...), formats, diversos fulls, ordenar, cercar i omplir sèries. Obre fitxers enormes sense esperes. Gratuït, sense anuncis i sense Internet: res surt del teu aparell.",
+      es: "Hoja de cálculo ágil y muy rápida: crea, abre y edita Excel (.xlsx, .xls, .xlsm, .xlsb), OpenDocument (.ods) y CSV. Más de 150 fórmulas (también en castellano: SUMA, SI, BUSCARV...), formatos, varias hojas, ordenar, buscar y rellenar series. Abre archivos enormes sin esperas. Gratis, sin anuncios y sin Internet: nada sale de tu dispositivo.",
+      fr: "Tableur agile et très rapide : créez, ouvrez et modifiez des fichiers Excel (.xlsx, .xls, .xlsm, .xlsb), OpenDocument (.ods) et CSV. Plus de 150 formules (aussi en français : SOMME, SI, RECHERCHEV...), mise en forme, plusieurs feuilles, tri, recherche et séries. Ouvre les fichiers énormes sans attendre. Gratuit, sans publicité et sans Internet : rien ne quitte votre appareil.",
+      en: "A fast, simple spreadsheet: create, open and edit Excel (.xlsx, .xls, .xlsm, .xlsb), OpenDocument (.ods) and CSV files. Over 150 formulas, formatting, multiple sheets, sorting, find and fill series. Opens huge files without waiting. Free, no ads and no Internet: nothing leaves your device.",
+    },
+  },
+  {
     id: "facturacio", cat: "utils", nom: "Xoriguer Facturació", icona: "img/facturacio.png", beta: true,
     versio: "facturacio/versio.json",     // instal·lador de Windows (xoriguer.dev)
     web: "https://xorigu3r.github.io/xoriguer-facturacio/",

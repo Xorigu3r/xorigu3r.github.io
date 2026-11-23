@@ -307,10 +307,10 @@ window.PRODUCTES = [
     versio: "galeria/versio.json",
     web: "https://xorigu3r.github.io/xoriguer-galeria/",
     desc: {
-      ca: "Galeria de fotos i vídeos ràpida i ben organitzada: per dies i mesos, àlbums, preferides, records («avui fa un any»), cerca, paperera, presentació, moure i copiar a àlbums, i la informació de cada foto amb el lloc al mapa. Gratuïta, sense anuncis i res surt del mòbil.",
-      es: "Galería de fotos y vídeos rápida y bien organizada: por días y meses, álbumes, favoritas, recuerdos («hoy hace un año»), búsqueda, papelera, presentación, mover y copiar a álbumes, y la información de cada foto con el lugar en el mapa. Gratis, sin anuncios y nada sale del móvil.",
-      fr: "Une galerie de photos et vidéos rapide et bien organisée : par jour et par mois, albums, favoris, souvenirs (« il y a un an aujourd’hui »), recherche, corbeille, diaporama, déplacer et copier vers des albums, et les infos de chaque photo avec le lieu sur la carte. Gratuite, sans publicité, rien ne quitte le téléphone.",
-      en: "A fast, well-organised photo and video gallery: by day and month, albums, favourites, memories (“1 year ago today”), search, bin, slideshow, move and copy to albums, and each photo’s details with its location on a map. Free, no ads and nothing leaves your phone.",
+      ca: "Galeria de fotos i vídeos ràpida i ben organitzada: per dies i mesos, àlbums, preferides, records («avui fa un any»), editor (retallar, girar, ajustos i filtres), cerca, paperera, presentació, moure i copiar a àlbums, i la informació de cada foto amb el lloc al mapa. Gratuïta, sense anuncis i res surt del mòbil.",
+      es: "Galería de fotos y vídeos rápida y bien organizada: por días y meses, álbumes, favoritas, recuerdos («hoy hace un año»), editor (recortar, girar, ajustes y filtros), búsqueda, papelera, presentación, mover y copiar a álbumes, y la información de cada foto con el lugar en el mapa. Gratis, sin anuncios y nada sale del móvil.",
+      fr: "Une galerie de photos et vidéos rapide et bien organisée : par jour et par mois, albums, favoris, souvenirs (« il y a un an aujourd’hui »), éditeur (recadrer, pivoter, réglages et filtres), recherche, corbeille, diaporama, déplacer et copier vers des albums, et les infos de chaque photo avec le lieu sur la carte. Gratuite, sans publicité, rien ne quitte le téléphone.",
+      en: "A fast, well-organised photo and video gallery: by day and month, albums, favourites, memories (“1 year ago today”), an editor (crop, rotate, adjustments and filters), search, bin, slideshow, move and copy to albums, and each photo’s details with its location on a map. Free, no ads and nothing leaves your phone.",
     },
   },
   {

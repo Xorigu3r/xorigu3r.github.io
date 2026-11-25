@@ -211,19 +211,19 @@ function card(p) {
   const T = TX[L], v = VER[p.id];
   const senseWin = p.windows === false;
   const win = senseWin ? "" : (v && okUrl(v.url)) ? v.url : (okUrl(p.windows) ? p.windows : "");
-  const web = okUrl(p.web) ? p.web : "";
+  const web = okUrl(p.web) && !(p.webPC && isMobile) ? p.web : "";   // webPC: l'app web només és per a l'ordinador
   const apk = (v && okUrl(v.apk)) ? v.apk : (okUrl(p.apk) ? p.apk : "");
   const mac = (v && okUrl(v.mac)) ? v.mac : (okUrl(p.mac) ? p.mac : "");
   const linux = (v && okUrl(v.linux)) ? v.linux : (okUrl(p.linux) ? p.linux : "");
   const desktopOnly = !web && !apk;
   const ico = p.icona ? `<img class="ico" src="${esc(/^(https?:)?\//.test(p.icona) ? p.icona : (FIXA ? "/" : "") + p.icona)}" alt="${esc(p.nom)}" width="64" height="64" loading="lazy">`
                       : `<div class="ico ini">${esc(p.inicials || p.nom[0])}</div>`;
-  const chips = [win || (p.versio && !senseWin) ? T.pcP : "", mac ? "Mac" : "", linux ? "Linux" : "", apk ? "Android" : "", web ? T.web + " · " + T.mob : ""].filter(Boolean)
+  const chips = [win || (p.versio && !senseWin) ? T.pcP : "", mac ? "Mac" : "", linux ? "Linux" : "", apk ? "Android" : "", web ? (p.webPC ? T.web : T.web + " · " + T.mob) : ""].filter(Boolean)
     .map(c => `<span class="chip">${esc(c)}</span>`).join("");
   const bWin = win ? `<a class="btn${isMobile ? " alt" : ""}" href="${esc(win)}" rel="noopener">${ICO.windows}${T.win}</a>`
                    : (!senseWin && (p.versio || p.windows !== undefined) ? `<span class="btn off">${T.winSoon}</span>` : "");
-  const bWeb = web ? `<a class="btn${isMobile ? "" : " alt"}" href="${esc(web)}" target="_blank" rel="noopener"><span class="pis">${ICO.apple}${ICO.android}</span>${T.open}</a>`
-                   : (p.web !== undefined ? `<span class="btn off">${T.webSoon}</span>` : "");
+  const bWeb = web ? `<a class="btn${isMobile ? "" : " alt"}" href="${esc(web)}" target="_blank" rel="noopener">${p.webPC ? "" : `<span class="pis">${ICO.apple}${ICO.android}</span>`}${T.open}</a>`
+                   : (p.web !== undefined && !p.webPC ? `<span class="btn off">${T.webSoon}</span>` : "");
   const bMac = mac ? `<a class="btn alt" href="${esc(mac)}" rel="noopener">${ICO.apple}${T.mac}</a>` : "";
   const bLinux = linux ? `<a class="btn alt" href="${esc(linux)}" rel="noopener">${ICO.linux}${T.linux}</a>` : "";
   const bApk = apk ? `<a class="btn alt" href="${esc(apk)}" rel="noopener">${ICO.android}${T.apk}</a>` : "";

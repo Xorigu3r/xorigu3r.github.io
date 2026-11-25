@@ -10,6 +10,7 @@
 //             false = el producte no té versió de Windows (no surt el botó).
 //  - web:     adreça de l'app web (PWA). Es pot obrir al navegador i instal·lar al mòbil.
 //  - apk:     enllaç a l'APK d'Android (opcional). Si el versio.json porta "apk", té prioritat.
+//  - webPC:   true = l'app web només és per a l'ordinador (al mòbil no surt el botó).
 //  - beta:    true = surt l'etiqueta «Beta».
 //  - salut:   true = surt l'avís «No substitueix el criteri mèdic».
 //  - cat:     categoria (jocs, utils, cuina, esport, bicicleta, salut, cotxe). Els noms i l'ordre són a CATEGORIES (index.html).
@@ -22,7 +23,7 @@ window.PRODUCTES = [
   {
     id: "xorigu3r", cat: "bicicleta", nom: "Xorigu3r", icona: "img/xorigu3r.png", beta: true,
     versio: "xorigu3r/versio.json",      // instal·lador de Windows (xoriguer.dev)
-    web: "https://xoriguer.dev/xorigu3r/",
+    web: "https://xoriguer.dev/xorigu3r/", webPC: true,   // l'editor web només a l'ordinador
     desc: {
       ca: "Dissenya les pantalles de dades del teu Garmin Edge arrossegant amb el ratolí: caselles com les del Garmin (de 1 a 12), velocímetres, arcs i barres amb colors de zona. 98 dades: potència, NP i TSS, pulsacions amb les zones de l'Edge, marxes Di2/AXS, llums Varia, radar, meteo, sortida i posta del sol, navegació i volta anterior. Per als 23 Edge amb Connect IQ, en 4 idiomes. Gratuït i sense anuncis.",
       es: "Diseña las pantallas de datos de tu Garmin Edge arrastrando con el ratón: casillas como las del Garmin (de 1 a 12), velocímetros, arcos y barras con colores de zona. 98 datos: potencia, NP y TSS, pulso con las zonas del Edge, marchas Di2/AXS, luces Varia, radar, meteo, salida y puesta del sol, navegación y vuelta anterior. Para los 23 Edge con Connect IQ, en 4 idiomas. Gratis y sin anuncios.",
@@ -103,7 +104,7 @@ window.PRODUCTES = [
     },
   },
   {
-    id: "acobert", cat: "esport", nom: "Xoriguer Acobert", icona: "img/acobert.png", beta: "proves",   // «Beta · Fase de proves»
+    id: "acobert", cat: "bicicleta", nom: "Xoriguer Acobert", icona: "img/acobert.png", beta: "proves",   // «Beta · Fase de proves»
     versio: "acobert/versio.json",
     desc: {
       ca: "Entrenament a casa amb rodet intel·ligent: sessions guiades, rutes virtuals i potència.",

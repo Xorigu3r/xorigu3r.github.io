@@ -12,13 +12,24 @@
 //  - apk:     enllaç a l'APK d'Android (opcional). Si el versio.json porta "apk", té prioritat.
 //  - beta:    true = surt l'etiqueta «Beta».
 //  - salut:   true = surt l'avís «No substitueix el criteri mèdic».
-//  - cat:     categoria (jocs, utils, cuina, esport, salut, cotxe). Els noms i l'ordre són a CATEGORIES (index.html).
+//  - cat:     categoria (jocs, utils, cuina, esport, bicicleta, salut, cotxe). Els noms i l'ordre són a CATEGORIES (index.html).
 // =====================================================================================
 
 // Enllaç de baixada directa del Google Drive (salta la pàgina de "no es pot analitzar")
 const DRIVE = id => `https://drive.usercontent.google.com/download?id=${id}&export=download&confirm=t`;
 
 window.PRODUCTES = [
+  {
+    id: "xorigu3r", cat: "bicicleta", nom: "Xorigu3r", icona: "img/xorigu3r.png", beta: true,
+    versio: "xorigu3r/versio.json",      // instal·lador de Windows (xoriguer.dev)
+    web: "https://xoriguer.dev/xorigu3r/",
+    desc: {
+      ca: "Dissenya les pantalles de dades del teu Garmin Edge arrossegant amb el ratolí: caselles com les del Garmin (de 1 a 12), velocímetres, arcs i barres amb colors de zona. 98 dades: potència, NP i TSS, pulsacions amb les zones de l'Edge, marxes Di2/AXS, llums Varia, radar, meteo, sortida i posta del sol, navegació i volta anterior. Per als 23 Edge amb Connect IQ, en 4 idiomes. Gratuït i sense anuncis.",
+      es: "Diseña las pantallas de datos de tu Garmin Edge arrastrando con el ratón: casillas como las del Garmin (de 1 a 12), velocímetros, arcos y barras con colores de zona. 98 datos: potencia, NP y TSS, pulso con las zonas del Edge, marchas Di2/AXS, luces Varia, radar, meteo, salida y puesta del sol, navegación y vuelta anterior. Para los 23 Edge con Connect IQ, en 4 idiomas. Gratis y sin anuncios.",
+      fr: "Créez les écrans de données de votre Garmin Edge à la souris : des cases comme celles du Garmin (de 1 à 12), des compteurs, des arcs et des barres aux couleurs des zones. 98 données : puissance, NP et TSS, cardio avec les zones de l’Edge, vitesses Di2/AXS, éclairage Varia, radar, météo, lever et coucher du soleil, navigation et tour précédent. Pour les 23 Edge compatibles Connect IQ, en 4 langues. Gratuit et sans publicité.",
+      en: "Design the data screens of your Garmin Edge by dragging with the mouse: cells like Garmin’s (1 to 12), speedometers, arcs and bars with zone colours. 98 data fields: power, NP and TSS, heart rate with the Edge’s zones, Di2/AXS gears, Varia lights, radar, weather, sunrise and sunset, navigation and last lap. For all 23 Connect IQ Edge models, in 4 languages. Free and ad-free.",
+    },
+  },
   {
     id: "pressio", cat: "salut", nom: "XoriguerPressió", icona: "img/pressio.png", salut: true,
     versio: "pressio/versio.json",

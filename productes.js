@@ -216,6 +216,16 @@ window.PRODUCTES = [
     },
   },
   {
+    id: "dvdusb", cat: "utils", nom: "Xoriguer DVD·USB", icona: "img/dvdusb.png", beta: true,
+    versio: "dvdusb/versio.json",       // instal·lador de Windows (xoriguer.dev)
+    desc: {
+      ca: "Passa la música d'un CD i el vídeo d'un DVD, Blu-ray o Vídeo CD a una carpeta o directament al USB, en tres passos. Noms i caràtules d'Internet, FLAC i MP3, MKV i MP4, rescat de fotos i vídeos de discos fets malbé i imatges ISO, BIN/CUE i NRG. Gratuït i sense anuncis.",
+      es: "Pasa la música de un CD y el vídeo de un DVD, Blu-ray o Vídeo CD a una carpeta o directamente al USB, en tres pasos. Nombres y carátulas de Internet, FLAC y MP3, MKV y MP4, rescate de fotos y vídeos de discos dañados e imágenes ISO, BIN/CUE y NRG. Gratis y sin anuncios.",
+      fr: "Copiez la musique d’un CD et la vidéo d’un DVD, Blu-ray ou Vidéo CD dans un dossier ou directement sur une clé USB, en trois étapes. Noms et pochettes depuis Internet, FLAC et MP3, MKV et MP4, récupération de photos et vidéos de disques abîmés et images ISO, BIN/CUE et NRG. Gratuit et sans publicité.",
+      en: "Copy the music from a CD and the video from a DVD, Blu-ray or Video CD to a folder or straight to a USB drive, in three steps. Names and covers from the Internet, FLAC and MP3, MKV and MP4, photo and video rescue from damaged discs, and ISO, BIN/CUE and NRG images. Free and ad-free.",
+    },
+  },
+  {
     id: "compactador", cat: "utils", nom: "Xoriguer Compactador", icona: "img/compactador.png", beta: true,
     versio: "compactador/versio.json",      // versió (i baixades) des de xoriguer.dev/versions
     windows: "https://github.com/Xorigu3r/xoriguer-compactador/releases/download/v1.0/XoriguerCompactador-Instalador.exe",
